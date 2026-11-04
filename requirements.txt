@@ -1,0 +1,5 @@
+# QuestDesk: deterministic LangGraph pipeline that answers a 261-question
+# CAIQ v4.0.2 vendor security questionnaire from a seeded approved-answer
+# library. The pipeline itself is stdlib-only (no LLM calls).
+pytest>=8.0
+pdfplumber>=0.11  # one-time CAIQ extraction in scripts/fetch_caiq.py only
