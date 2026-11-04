@@ -10,7 +10,8 @@
   "ready_pct": 24.5,
   "flags": {
    "STALE_ANSWER": 61,
-   "WORDING_CHANGED": 2
+   "STALE_EVIDENCE": 2,
+   "WORDING_CHANGED": 3
   },
   "mean_match_confidence": 62.0,
   "domain_table": {
@@ -202,7 +203,8 @@
    "question_id": "A&A-01.1",
    "route": "REVERIFY",
    "flags": [
-    "STALE_ANSWER"
+    "STALE_ANSWER",
+    "STALE_EVIDENCE"
    ],
    "answer_id": "HL-AA-01",
    "score": 71.54,
@@ -211,12 +213,12 @@
     "text": "Harbourline maintains an Information Security Policy (v4.0) that includes audit and assurance requirements. Policies are approved by the CISO, published in the company handbook, communicated to all staff during onboarding, and evaluated for effectiveness as part of the annual SOC 2 readiness review.",
     "evidence": [
      "EV-POLICY-INFOSEC",
-     "EV-SOC2-2026"
+     "EV-SOC2-2025"
     ],
     "owner": "Priya Nair",
     "owner_title": "CISO",
     "last_reviewed": "2026-03-10",
-    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+    "action": "Re-verify with the control owner (answer is past its 180-day review date; linked evidence is stale: EV-SOC2-2025), then approve."
    },
    "pending_approval": true
   },
@@ -224,7 +226,8 @@
    "question_id": "A&A-01.2",
    "route": "REVERIFY",
    "flags": [
-    "STALE_ANSWER"
+    "STALE_ANSWER",
+    "STALE_EVIDENCE"
    ],
    "answer_id": "HL-AA-01",
    "score": 71.54,
@@ -233,12 +236,12 @@
     "text": "Harbourline maintains an Information Security Policy (v4.0) that includes audit and assurance requirements. Policies are approved by the CISO, published in the company handbook, communicated to all staff during onboarding, and evaluated for effectiveness as part of the annual SOC 2 readiness review.",
     "evidence": [
      "EV-POLICY-INFOSEC",
-     "EV-SOC2-2026"
+     "EV-SOC2-2025"
     ],
     "owner": "Priya Nair",
     "owner_title": "CISO",
     "last_reviewed": "2026-03-10",
-    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+    "action": "Re-verify with the control owner (answer is past its 180-day review date; linked evidence is stale: EV-SOC2-2025), then approve."
    },
    "pending_approval": true
   },
@@ -2219,7 +2222,8 @@
    "question_id": "DSP-16.1",
    "route": "REVERIFY",
    "flags": [
-    "STALE_ANSWER"
+    "STALE_ANSWER",
+    "WORDING_CHANGED"
    ],
    "answer_id": "HL-DSP-06",
    "score": 51.35,

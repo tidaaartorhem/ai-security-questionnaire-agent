@@ -73,7 +73,7 @@ OWNER_TITLES = {
 # ============================ A&A ============================
 A("HL-AA-01", ["A&A"], "audit assurance policies procedures standards established documented approved communicated evaluated maintained",
   "Yes", "Harbourline maintains an Information Security Policy (v4.0) that includes audit and assurance requirements. Policies are approved by the CISO, published in the company handbook, communicated to all staff during onboarding, and evaluated for effectiveness as part of the annual SOC 2 readiness review.",
-  "Priya Nair", "2026-03-10", ["EV-POLICY-INFOSEC", "EV-SOC2-2026"])
+  "Priya Nair", "2026-03-10", ["EV-POLICY-INFOSEC", "EV-SOC2-2025"])
 A("HL-AA-02", ["A&A"], "independent audit assurance assessment SOC 2 Type II annual external auditor",
   "Yes", "Harbourline undergoes an independent SOC 2 Type II audit annually, performed by Northgate Assurance LLP. The most recent report covers the period ending 2026-06-30 and was issued 2026-08-20. The audit is conducted under AICPA Trust Services Criteria and includes testing of security, availability, and confidentiality controls.",
   "Priya Nair", "2026-08-20", ["EV-SOC2-2026"])
