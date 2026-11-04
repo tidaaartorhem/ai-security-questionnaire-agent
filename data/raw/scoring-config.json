@@ -1,0 +1,27 @@
+{
+ "effort_minutes": {
+  "NEW": 45,
+  "READY": 3,
+  "REVERIFY": 20,
+  "REVIEW": 15
+ },
+ "freshness": {
+  "answer_stale_after_days": 180,
+  "evidence_stale_after_days": 365,
+  "wording_change_jaccard_below": 0.85
+ },
+ "note": "Scores are deterministic and disclosed. A match below min_match (50) is treated as unanswered (NEW).",
+ "replay_date": "2026-11-04",
+ "thresholds": {
+  "min_match": 35,
+  "review": 35,
+  "auto_ready": 60
+ },
+ "weights": {
+  "bigram_jaccard": 10,
+  "domain_boost": 15,
+  "exact_phrase": 20,
+  "keyword_recall": 55
+ },
+ "tuning_note": "Thresholds grid-searched on the 41-pair golden set (min_match=35, auto_ready=60); routing_accuracy=0.829, precision=0.968, recall=0.811."
+}

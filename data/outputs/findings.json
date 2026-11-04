@@ -1,0 +1,4828 @@
+{
+ "findings": {
+  "question_count": 261,
+  "routes": {
+   "REVERIFY": 61,
+   "REVIEW": 38,
+   "READY": 64,
+   "NEW": 98
+  },
+  "ready_pct": 24.5,
+  "flags": {
+   "STALE_ANSWER": 61,
+   "WORDING_CHANGED": 2
+  },
+  "mean_match_confidence": 62.0,
+  "domain_table": {
+   "A&A": {
+    "total": 8,
+    "ready": 3,
+    "review": 2,
+    "reverify": 3,
+    "new": 0,
+    "coverage_pct": 100.0
+   },
+   "AIS": {
+    "total": 11,
+    "ready": 4,
+    "review": 1,
+    "reverify": 3,
+    "new": 3,
+    "coverage_pct": 72.7
+   },
+   "BCR": {
+    "total": 18,
+    "ready": 6,
+    "review": 3,
+    "reverify": 6,
+    "new": 3,
+    "coverage_pct": 83.3
+   },
+   "CCC": {
+    "total": 11,
+    "ready": 3,
+    "review": 0,
+    "reverify": 5,
+    "new": 3,
+    "coverage_pct": 72.7
+   },
+   "CEK": {
+    "total": 23,
+    "ready": 2,
+    "review": 6,
+    "reverify": 6,
+    "new": 9,
+    "coverage_pct": 60.9
+   },
+   "DCS": {
+    "total": 23,
+    "ready": 0,
+    "review": 2,
+    "reverify": 5,
+    "new": 16,
+    "coverage_pct": 30.4
+   },
+   "DSP": {
+    "total": 24,
+    "ready": 4,
+    "review": 3,
+    "reverify": 4,
+    "new": 13,
+    "coverage_pct": 45.8
+   },
+   "GRC": {
+    "total": 9,
+    "ready": 2,
+    "review": 0,
+    "reverify": 4,
+    "new": 3,
+    "coverage_pct": 66.7
+   },
+   "HRS": {
+    "total": 20,
+    "ready": 5,
+    "review": 1,
+    "reverify": 7,
+    "new": 7,
+    "coverage_pct": 65.0
+   },
+   "IAM": {
+    "total": 21,
+    "ready": 4,
+    "review": 9,
+    "reverify": 4,
+    "new": 4,
+    "coverage_pct": 81.0
+   },
+   "IPY": {
+    "total": 8,
+    "ready": 1,
+    "review": 1,
+    "reverify": 2,
+    "new": 4,
+    "coverage_pct": 50.0
+   },
+   "IVS": {
+    "total": 14,
+    "ready": 7,
+    "review": 1,
+    "reverify": 0,
+    "new": 6,
+    "coverage_pct": 57.1
+   },
+   "LOG": {
+    "total": 18,
+    "ready": 6,
+    "review": 1,
+    "reverify": 5,
+    "new": 6,
+    "coverage_pct": 66.7
+   },
+   "SEF": {
+    "total": 11,
+    "ready": 5,
+    "review": 4,
+    "reverify": 0,
+    "new": 2,
+    "coverage_pct": 81.8
+   },
+   "STA": {
+    "total": 15,
+    "ready": 4,
+    "review": 1,
+    "reverify": 3,
+    "new": 7,
+    "coverage_pct": 53.3
+   },
+   "TVM": {
+    "total": 12,
+    "ready": 4,
+    "review": 1,
+    "reverify": 2,
+    "new": 5,
+    "coverage_pct": 58.3
+   },
+   "UEM": {
+    "total": 15,
+    "ready": 4,
+    "review": 2,
+    "reverify": 2,
+    "new": 7,
+    "coverage_pct": 53.3
+   }
+  },
+  "worst_domains": [
+   [
+    "DCS",
+    {
+     "total": 23,
+     "ready": 0,
+     "review": 2,
+     "reverify": 5,
+     "new": 16,
+     "coverage_pct": 30.4
+    }
+   ],
+   [
+    "DSP",
+    {
+     "total": 24,
+     "ready": 4,
+     "review": 3,
+     "reverify": 4,
+     "new": 13,
+     "coverage_pct": 45.8
+    }
+   ],
+   [
+    "IPY",
+    {
+     "total": 8,
+     "ready": 1,
+     "review": 1,
+     "reverify": 2,
+     "new": 4,
+     "coverage_pct": 50.0
+    }
+   ]
+  ],
+  "effort_minutes": 6392,
+  "effort_hours": 106.5,
+  "sme_queue_owners": {
+   "Daniel Okafor": 39,
+   "Lena Fischer": 23,
+   "Priya Nair": 18,
+   "Sam Reyes": 9,
+   "Marcus Webb": 6,
+   "Aisha Bello": 4
+  }
+ },
+ "export_pack": [
+  {
+   "question_id": "A&A-01.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-AA-01",
+   "score": 71.54,
+   "draft": {
+    "response": "Yes",
+    "text": "Harbourline maintains an Information Security Policy (v4.0) that includes audit and assurance requirements. Policies are approved by the CISO, published in the company handbook, communicated to all staff during onboarding, and evaluated for effectiveness as part of the annual SOC 2 readiness review.",
+    "evidence": [
+     "EV-POLICY-INFOSEC",
+     "EV-SOC2-2026"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "A&A-01.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-AA-01",
+   "score": 71.54,
+   "draft": {
+    "response": "Yes",
+    "text": "Harbourline maintains an Information Security Policy (v4.0) that includes audit and assurance requirements. Policies are approved by the CISO, published in the company handbook, communicated to all staff during onboarding, and evaluated for effectiveness as part of the annual SOC 2 readiness review.",
+    "evidence": [
+     "EV-POLICY-INFOSEC",
+     "EV-SOC2-2026"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "A&A-02.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-AA-02",
+   "score": 52.11,
+   "draft": {
+    "response": "Yes",
+    "text": "Harbourline undergoes an independent SOC 2 Type II audit annually, performed by Northgate Assurance LLP. The most recent report covers the period ending 2026-06-30 and was issued 2026-08-20. The audit is conducted under AICPA Trust Services Criteria and includes testing of security, availability, and confidentiality controls.",
+    "evidence": [
+     "EV-SOC2-2026"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-08-20",
+    "action": "SME review: confirm the matched answer (score 52.11, margin 9.28) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "A&A-03.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-AA-02",
+   "score": 39.86,
+   "draft": {
+    "response": "Yes",
+    "text": "Harbourline undergoes an independent SOC 2 Type II audit annually, performed by Northgate Assurance LLP. The most recent report covers the period ending 2026-06-30 and was issued 2026-08-20. The audit is conducted under AICPA Trust Services Criteria and includes testing of security, availability, and confidentiality controls.",
+    "evidence": [
+     "EV-SOC2-2026"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-08-20",
+    "action": "SME review: confirm the matched answer (score 39.86, margin 0.2) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "A&A-04.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-AA-04",
+   "score": 66.58,
+   "draft": {
+    "response": "Yes",
+    "text": "Compliance against SOC 2, PIPEDA, and applicable contractual security requirements is verified through the annual SOC 2 audit and quarterly internal control self-assessments. Contractual obligations from customer DPAs are mapped to controls in the GRC register and reviewed when agreements renew.",
+    "evidence": [
+     "EV-SOC2-2026",
+     "EV-RISK-REGISTER"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-09-30",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "A&A-05.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-AA-05",
+   "score": 79.08,
+   "draft": {
+    "response": "Yes",
+    "text": "The audit management process is defined in the Information Security Policy: annual audit planning, risk-based scoping, evidence collection with assigned owners, management review of findings, and tracked remediation. The CISO runs the cycle each year ahead of the SOC 2 fieldwork window.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "A&A-06.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-AA-03",
+   "score": 91.5,
+   "draft": {
+    "response": "Yes",
+    "text": "Audit findings are tracked in a risk-ranked remediation register owned by the CISO. Each finding gets a severity, an owner, and a target date; critical findings require remediation within 30 days. Remediation status is reviewed monthly by leadership and reported to the board quarterly.",
+    "evidence": [
+     "EV-RISK-REGISTER",
+     "EV-SOC2-2026"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-09-30",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "A&A-06.2",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-AA-03",
+   "score": 70.48,
+   "draft": {
+    "response": "Yes",
+    "text": "Audit findings are tracked in a risk-ranked remediation register owned by the CISO. Each finding gets a severity, an owner, and a target date; critical findings require remediation within 30 days. Remediation status is reviewed monthly by leadership and reported to the board quarterly.",
+    "evidence": [
+     "EV-RISK-REGISTER",
+     "EV-SOC2-2026"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-09-30",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "AIS-01.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-AIS-01",
+   "score": 55.86,
+   "draft": {
+    "response": "Yes",
+    "text": "The Application Security Policy (v3.0) defines secure development requirements for all Harbourline services: threat modeling for new features, mandatory code review, SAST in CI, and dependency scanning. It is reviewed annually by Security Engineering.",
+    "evidence": [
+     "EV-POLICY-APPSEC"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-02-15",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "AIS-01.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-AIS-01",
+   "score": 91.11,
+   "draft": {
+    "response": "Yes",
+    "text": "The Application Security Policy (v3.0) defines secure development requirements for all Harbourline services: threat modeling for new features, mandatory code review, SAST in CI, and dependency scanning. It is reviewed annually by Security Engineering.",
+    "evidence": [
+     "EV-POLICY-APPSEC"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-02-15",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "AIS-02.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-AIS-03",
+   "score": 59.67,
+   "draft": {
+    "response": "Yes",
+    "text": "Baseline security requirements for applications (authentication, session management, input validation, logging, cryptography) are documented in the AppSec baseline standard. New services must meet the baseline before launch, verified by a pre-launch security checklist.",
+    "evidence": [
+     "EV-POLICY-APPSEC"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-02-15",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "AIS-03.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 27.51,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "AIS-04.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-AIS-02",
+   "score": 61.84,
+   "draft": {
+    "response": "Yes",
+    "text": "Harbourline follows a defined SDLC: design review with security sign-off, branch-protected GitHub repos, CI checks (SAST, SCA, secret scanning), staged deployment through GitHub Actions, and production change approval. The process is documented in the engineering handbook.",
+    "evidence": [
+     "EV-POLICY-APPSEC",
+     "EV-POLICY-CHANGE"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-06-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "AIS-05.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 31.86,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "AIS-05.2",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-AIS-04",
+   "score": 42.5,
+   "draft": {
+    "response": "Yes",
+    "text": "Release acceptance criteria require green CI (unit/integration tests), SAST and dependency scans with no critical findings, and QA sign-off. Automated test suites run on every pull request via GitHub Actions; penetration testing is performed annually by an external firm.",
+    "evidence": [
+     "EV-PENTEST-2026"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-09-02",
+    "action": "SME review: confirm the matched answer (score 42.5, margin 13.75) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "AIS-06.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 33.63,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "AIS-06.2",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-AIS-05",
+   "score": 82.26,
+   "draft": {
+    "response": "Yes",
+    "text": "All application deployments are automated through GitHub Actions pipelines with signed artifacts, staged rollouts, and automated rollback on health-check failure. Manual production deploys are not permitted.",
+    "evidence": [
+     "EV-POLICY-CHANGE"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-06-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "AIS-07.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-AIS-06",
+   "score": 81.64,
+   "draft": {
+    "response": "Yes",
+    "text": "Vulnerabilities are triaged by severity with defined SLAs: critical within 15 days, high within 30 days, tracked in the security backlog. Remediation of critical/high findings is verified by re-scan before closure. The 2026 penetration test findings were all remediated within SLA.",
+    "evidence": [
+     "EV-PENTEST-2026",
+     "EV-VULNSCAN-Q3"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-09-02",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "AIS-07.2",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-AIS-06",
+   "score": 72.19,
+   "draft": {
+    "response": "Yes",
+    "text": "Vulnerabilities are triaged by severity with defined SLAs: critical within 15 days, high within 30 days, tracked in the security backlog. Remediation of critical/high findings is verified by re-scan before closure. The 2026 penetration test findings were all remediated within SLA.",
+    "evidence": [
+     "EV-PENTEST-2026",
+     "EV-VULNSCAN-Q3"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-09-02",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-01.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-BCR-01",
+   "score": 83.74,
+   "draft": {
+    "response": "Yes",
+    "text": "The Business Continuity Policy (v2.0) covers continuity and operational resilience for the SaaS platform and corporate operations, with defined roles, RTO/RPO targets per service tier, and annual review by IT Operations.",
+    "evidence": [
+     "EV-POLICY-BCP"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-01-20",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-01.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-BCR-01",
+   "score": 70.43,
+   "draft": {
+    "response": "Yes",
+    "text": "The Business Continuity Policy (v2.0) covers continuity and operational resilience for the SaaS platform and corporate operations, with defined roles, RTO/RPO targets per service tier, and annual review by IT Operations.",
+    "evidence": [
+     "EV-POLICY-BCP"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-01-20",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-02.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 33.62,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-03.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-BCR-02",
+   "score": 45.97,
+   "draft": {
+    "response": "Yes",
+    "text": "Continuity strategies include multi-AZ deployment on AWS, automated failover for the primary database, and a documented degraded-mode runbook. Strategies are reviewed after each test or real incident.",
+    "evidence": [
+     "EV-BCP-TEST-2026"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-05-22",
+    "action": "SME review: confirm the matched answer (score 45.97, margin 25.97) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-04.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 29.31,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-05.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-BCR-01",
+   "score": 38.03,
+   "draft": {
+    "response": "Yes",
+    "text": "The Business Continuity Policy (v2.0) covers continuity and operational resilience for the SaaS platform and corporate operations, with defined roles, RTO/RPO targets per service tier, and annual review by IT Operations.",
+    "evidence": [
+     "EV-POLICY-BCP"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-01-20",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-05.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-BCR-01",
+   "score": 43.61,
+   "draft": {
+    "response": "Yes",
+    "text": "The Business Continuity Policy (v2.0) covers continuity and operational resilience for the SaaS platform and corporate operations, with defined roles, RTO/RPO targets per service tier, and annual review by IT Operations.",
+    "evidence": [
+     "EV-POLICY-BCP"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-01-20",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-05.3",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-BCR-01",
+   "score": 52.87,
+   "draft": {
+    "response": "Yes",
+    "text": "The Business Continuity Policy (v2.0) covers continuity and operational resilience for the SaaS platform and corporate operations, with defined roles, RTO/RPO targets per service tier, and annual review by IT Operations.",
+    "evidence": [
+     "EV-POLICY-BCP"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-01-20",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-06.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-BCR-03",
+   "score": 43.38,
+   "draft": {
+    "response": "Yes",
+    "text": "The business continuity and disaster response plans are exercised at least annually. The most recent test (2026-05-22) covered a simulated regional AWS impairment with database failover; all RTO targets were met and lessons learned were actioned.",
+    "evidence": [
+     "EV-BCP-TEST-2026"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-05-22",
+    "action": "SME review: confirm the matched answer (score 43.38, margin 5.35) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-07.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-BCR-01",
+   "score": 42.84,
+   "draft": {
+    "response": "Yes",
+    "text": "The Business Continuity Policy (v2.0) covers continuity and operational resilience for the SaaS platform and corporate operations, with defined roles, RTO/RPO targets per service tier, and annual review by IT Operations.",
+    "evidence": [
+     "EV-POLICY-BCP"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-01-20",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-08.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-BCR-04",
+   "score": 90.91,
+   "draft": {
+    "response": "Yes",
+    "text": "Customer data in RDS and S3 is backed up automatically with point-in-time recovery (35-day retention for databases, versioned S3 with 90-day retention). Backups are encrypted with the same KMS keys as production and access is restricted to the platform team.",
+    "evidence": [
+     "EV-BACKUP-RESTORE"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-10-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-08.2",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-BCR-04",
+   "score": 61.69,
+   "draft": {
+    "response": "Yes",
+    "text": "Customer data in RDS and S3 is backed up automatically with point-in-time recovery (35-day retention for databases, versioned S3 with 90-day retention). Backups are encrypted with the same KMS keys as production and access is restricted to the platform team.",
+    "evidence": [
+     "EV-BACKUP-RESTORE"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-10-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-08.3",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-BCR-05",
+   "score": 71.25,
+   "draft": {
+    "response": "Yes",
+    "text": "Backup restores are tested monthly: a database snapshot is restored to an isolated environment and integrity-checked. The October 2026 test restored successfully within the 4-hour RTO.",
+    "evidence": [
+     "EV-BACKUP-RESTORE"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-10-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-09.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-BCR-06",
+   "score": 56.74,
+   "draft": {
+    "response": "Yes",
+    "text": "The disaster response plan is documented, approved by the CISO, and maintained by IT Operations. It is updated at least annually and after any significant infrastructure change, most recently following the May 2026 exercise.",
+    "evidence": [
+     "EV-BCP-TEST-2026",
+     "EV-POLICY-BCP"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-05-22",
+    "action": "SME review: confirm the matched answer (score 56.74, margin 0.51) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-09.2",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-BCR-06",
+   "score": 72.92,
+   "draft": {
+    "response": "Yes",
+    "text": "The disaster response plan is documented, approved by the CISO, and maintained by IT Operations. It is updated at least annually and after any significant infrastructure change, most recently following the May 2026 exercise.",
+    "evidence": [
+     "EV-BCP-TEST-2026",
+     "EV-POLICY-BCP"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-05-22",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-10.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-BCR-06",
+   "score": 67.61,
+   "draft": {
+    "response": "Yes",
+    "text": "The disaster response plan is documented, approved by the CISO, and maintained by IT Operations. It is updated at least annually and after any significant infrastructure change, most recently following the May 2026 exercise.",
+    "evidence": [
+     "EV-BCP-TEST-2026",
+     "EV-POLICY-BCP"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-05-22",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-10.2",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-BCR-07",
+   "score": 81.9,
+   "draft": {
+    "response": "No",
+    "text": "The annual continuity exercise is a tabletop plus technical failover test run internally; local emergency authorities are not included because Harbourline operates a single Toronto office and a cloud-only platform with no physical facilities under its control.",
+    "evidence": [
+     "EV-BCP-TEST-2026"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-05-22",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "BCR-11.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 18.93,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CCC-01.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 27.4,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CCC-01.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-LOG-01",
+   "score": 55.59,
+   "draft": {
+    "response": "Yes",
+    "text": "Logging and monitoring requirements are defined in the Information Security Policy: what is logged, centralized collection, 13-month retention, and restricted access. The policy is reviewed annually.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CCC-02.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-CCC-01",
+   "score": 49.14,
+   "draft": {
+    "response": "Yes",
+    "text": "All production changes go through the change management process: pull-request review, CI checks, and approval by a code owner; database migrations require DBA review. Emergency changes follow a documented break-glass path with retrospective approval within 24 hours.",
+    "evidence": [
+     "EV-POLICY-CHANGE"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-04-05",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CCC-03.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 26.58,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CCC-04.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-CCC-02",
+   "score": 64.69,
+   "draft": {
+    "response": "Yes",
+    "text": "Production asset changes are restricted to the deployment pipeline \u2014 direct console/SSH access to production is disabled. Infrastructure is defined in Terraform; drift is detected by a nightly plan check and unauthorized changes are reverted.",
+    "evidence": [
+     "EV-POLICY-CHANGE"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-09-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CCC-05.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 22.86,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CCC-06.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-CCC-01",
+   "score": 54.51,
+   "draft": {
+    "response": "Yes",
+    "text": "All production changes go through the change management process: pull-request review, CI checks, and approval by a code owner; database migrations require DBA review. Emergency changes follow a documented break-glass path with retrospective approval within 24 hours.",
+    "evidence": [
+     "EV-POLICY-CHANGE"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-04-05",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CCC-07.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-CCC-05",
+   "score": 71.94,
+   "draft": {
+    "response": "Yes",
+    "text": "Configuration drift is detected by nightly Terraform plan runs and Datadog monitors on critical infrastructure settings; deviations page the on-call engineer. CloudTrail-equivalent audit logs capture all control-plane changes.",
+    "evidence": [
+     "EV-DATADOG-LOGS"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-10-20",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CCC-08.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-CCC-04",
+   "score": 63.05,
+   "draft": {
+    "response": "Yes",
+    "text": "Emergency changes use the break-glass procedure: implement first with on-call approval, document in the change log, and obtain retrospective approval within 24 hours. Emergency changes are reviewed in the weekly engineering review.",
+    "evidence": [
+     "EV-POLICY-CHANGE"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-04-05",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CCC-08.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-CCC-04",
+   "score": 35.9,
+   "draft": {
+    "response": "Yes",
+    "text": "Emergency changes use the break-glass procedure: implement first with on-call approval, document in the change log, and obtain retrospective approval within 24 hours. Emergency changes are reviewed in the weekly engineering review.",
+    "evidence": [
+     "EV-POLICY-CHANGE"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-04-05",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CCC-09.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-CCC-03",
+   "score": 66.38,
+   "draft": {
+    "response": "Yes",
+    "text": "Every deployment supports automated rollback: container images are immutable and tagged, database migrations are reversible, and Terraform state is versioned. Rollback was exercised successfully during the May continuity test.",
+    "evidence": [
+     "EV-POLICY-CHANGE",
+     "EV-BCP-TEST-2026"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-05-22",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-01.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-CEK-01",
+   "score": 91.79,
+   "draft": {
+    "response": "Yes",
+    "text": "Cryptography and key management requirements are defined in the Information Security Policy and the AppSec baseline: approved algorithms, KMS usage, and role assignments. The Security Engineer owns the key management program; the CISO approves exceptions.",
+    "evidence": [
+     "EV-POLICY-INFOSEC",
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-01.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-CEK-01",
+   "score": 91.79,
+   "draft": {
+    "response": "Yes",
+    "text": "Cryptography and key management requirements are defined in the Information Security Policy and the AppSec baseline: approved algorithms, KMS usage, and role assignments. The Security Engineer owns the key management program; the CISO approves exceptions.",
+    "evidence": [
+     "EV-POLICY-INFOSEC",
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-02.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-CEK-01",
+   "score": 71.38,
+   "draft": {
+    "response": "Yes",
+    "text": "Cryptography and key management requirements are defined in the Information Security Policy and the AppSec baseline: approved algorithms, KMS usage, and role assignments. The Security Engineer owns the key management program; the CISO approves exceptions.",
+    "evidence": [
+     "EV-POLICY-INFOSEC",
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-03.1",
+   "route": "REVIEW",
+   "flags": [
+    "WORDING_CHANGED"
+   ],
+   "answer_id": "HL-CEK-02",
+   "score": 80.03,
+   "draft": {
+    "response": "Yes",
+    "text": "Data at rest is encrypted with AES-256 via AWS KMS; data in transit uses TLS 1.2+ for all external and inter-service traffic. Cryptographic operations use AWS-maintained libraries (FIPS 140-2 validated modules where applicable).",
+    "evidence": [
+     "EV-CRYPTO-INVENTORY",
+     "EV-PENTEST-2026"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-09-15",
+    "action": "Question wording changed since the last round \u2014 confirm the approved answer still applies, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-04.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-CEK-03",
+   "score": 38.5,
+   "draft": {
+    "response": "Yes",
+    "text": "AES-256-GCM is the standard for data at rest and TLS 1.2+ with strong cipher suites for data in transit, applied uniformly including to data classified as confidential or restricted in the data classification scheme.",
+    "evidence": [
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-09-15",
+    "action": "SME review: confirm the matched answer (score 38.5, margin 14.33) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-05.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 31.89,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-06.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 30.87,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-07.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-CEK-01",
+   "score": 36.9,
+   "draft": {
+    "response": "Yes",
+    "text": "Cryptography and key management requirements are defined in the Information Security Policy and the AppSec baseline: approved algorithms, KMS usage, and role assignments. The Security Engineer owns the key management program; the CISO approves exceptions.",
+    "evidence": [
+     "EV-POLICY-INFOSEC",
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-08.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-CEK-08",
+   "score": 70.71,
+   "draft": {
+    "response": "No",
+    "text": "Harbourline does not currently offer customer-managed (BYOK) encryption keys; all tenant data is encrypted under Harbourline-managed KMS keys with per-tenant key separation. BYOK is on the roadmap for enterprise tiers.",
+    "evidence": [
+     "EV-POLICY-DATA"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-08-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-09.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-CEK-01",
+   "score": 35.16,
+   "draft": {
+    "response": "Yes",
+    "text": "Cryptography and key management requirements are defined in the Information Security Policy and the AppSec baseline: approved algorithms, KMS usage, and role assignments. The Security Engineer owns the key management program; the CISO approves exceptions.",
+    "evidence": [
+     "EV-POLICY-INFOSEC",
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-09.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-CEK-01",
+   "score": 37.57,
+   "draft": {
+    "response": "Yes",
+    "text": "Cryptography and key management requirements are defined in the Information Security Policy and the AppSec baseline: approved algorithms, KMS usage, and role assignments. The Security Engineer owns the key management program; the CISO approves exceptions.",
+    "evidence": [
+     "EV-POLICY-INFOSEC",
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-10.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-CEK-04",
+   "score": 71.36,
+   "draft": {
+    "response": "Yes",
+    "text": "Keys are generated by AWS KMS using FIPS 140-2 validated hardware security modules; application-level secrets are generated with cryptographically secure random number generators. No customer code implements its own key generation.",
+    "evidence": [
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-09-15",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-11.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 28.75,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-12.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-CEK-05",
+   "score": 51.32,
+   "draft": {
+    "response": "Yes",
+    "text": "KMS data keys rotate automatically on the AWS-managed schedule; service credentials and API tokens rotate at least annually and on employee departure. Rotation events are logged and reviewed quarterly.",
+    "evidence": [
+     "EV-CRYPTO-INVENTORY",
+     "EV-ACCESS-REVIEW-Q3"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-10",
+    "action": "SME review: confirm the matched answer (score 51.32, margin 28.22) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-13.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 31.19,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-14.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-CEK-07",
+   "score": 53.9,
+   "draft": {
+    "response": "Yes",
+    "text": "Unneeded KMS keys are scheduled for deletion with the minimum 7-day waiting period after confirming no encrypted data depends on them; application secrets are rotated then purged from the secrets manager.",
+    "evidence": [
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-09-15",
+    "action": "SME review: confirm the matched answer (score 53.9, margin 25.32) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-15.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 31.01,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-16.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 29.52,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-17.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-CEK-07",
+   "score": 35.45,
+   "draft": {
+    "response": "Yes",
+    "text": "Unneeded KMS keys are scheduled for deletion with the minimum 7-day waiting period after confirming no encrypted data depends on them; application secrets are rotated then purged from the secrets manager.",
+    "evidence": [
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-09-15",
+    "action": "SME review: confirm the matched answer (score 35.45, margin 16.52) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-18.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-CEK-07",
+   "score": 35.44,
+   "draft": {
+    "response": "Yes",
+    "text": "Unneeded KMS keys are scheduled for deletion with the minimum 7-day waiting period after confirming no encrypted data depends on them; application secrets are rotated then purged from the secrets manager.",
+    "evidence": [
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-09-15",
+    "action": "SME review: confirm the matched answer (score 35.44, margin 13.97) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-19.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 30.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-20.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 28.17,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "CEK-21.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 27.95,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-01.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 32.09,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-01.2",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-DCS-02",
+   "score": 43.07,
+   "draft": {
+    "response": "Yes",
+    "text": "End-of-life laptops and drives are wiped with certified erasure software or physically destroyed by a contracted ITAD vendor with certificates of destruction. Cloud storage media sanitization is inherited from AWS.",
+    "evidence": [
+     "EV-JAMF-COMPLIANCE"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-06-01",
+    "action": "SME review: confirm the matched answer (score 43.07, margin 26.57) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-01.3",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 33.94,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-02.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 24.17,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-02.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 15.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-02.3",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 25.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-03.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 25.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-03.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 27.22,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-04.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 30.71,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-04.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 33.33,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-05.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 33.98,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-06.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-DCS-05",
+   "score": 43.12,
+   "draft": {
+    "response": "Yes",
+    "text": "All corporate assets (laptops, monitors, mobile devices) are cataloged in Jamf Pro and the IT asset register; cloud assets are inventoried via AWS Config. The inventory is reconciled quarterly.",
+    "evidence": [
+     "EV-JAMF-COMPLIANCE"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-11-01",
+    "action": "SME review: confirm the matched answer (score 43.12, margin 21.12) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-07.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-DCS-03",
+   "score": 63.11,
+   "draft": {
+    "response": "Yes",
+    "text": "The Toronto office uses badge access with visitor logging; server rooms are not applicable (cloud-only). AWS facility perimeters and access controls are inherited and attested in the AWS SOC 2 report.",
+    "evidence": [
+     "EV-AWS-SOC2"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2025-11-15",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-07.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-DCS-03",
+   "score": 57.57,
+   "draft": {
+    "response": "Yes",
+    "text": "The Toronto office uses badge access with visitor logging; server rooms are not applicable (cloud-only). AWS facility perimeters and access controls are inherited and attested in the AWS SOC 2 report.",
+    "evidence": [
+     "EV-AWS-SOC2"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2025-11-15",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-08.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 24.17,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-09.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-DCS-03",
+   "score": 39.06,
+   "draft": {
+    "response": "Yes",
+    "text": "The Toronto office uses badge access with visitor logging; server rooms are not applicable (cloud-only). AWS facility perimeters and access controls are inherited and attested in the AWS SOC 2 report.",
+    "evidence": [
+     "EV-AWS-SOC2"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2025-11-15",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-09.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 21.88,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-10.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 33.67,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-11.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-DCS-06",
+   "score": 70.53,
+   "draft": {
+    "response": "Yes",
+    "text": "Office entry points have badge readers with audit logs reviewed on incident; AWS datacenter surveillance and personnel controls are inherited under the shared responsibility model.",
+    "evidence": [
+     "EV-AWS-SOC2"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2025-11-15",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-12.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 18.24,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-13.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-DCS-04",
+   "score": 44.24,
+   "draft": {
+    "response": "Yes",
+    "text": "Not applicable to Harbourline-operated facilities \u2014 environmental and utility controls for compute facilities are provided and attested by AWS under the shared responsibility model.",
+    "evidence": [
+     "EV-AWS-SOC2"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-04-01",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-14.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 27.59,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DCS-15.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 20.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-01.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-DSP-01",
+   "score": 37.56,
+   "draft": {
+    "response": "Yes",
+    "text": "The Data Protection and Privacy Policy (v2.1) governs the full data lifecycle \u2014 collection, use, retention, and deletion \u2014 for customer and personal data. It is approved by Privacy Counsel, communicated at onboarding, and reviewed annually.",
+    "evidence": [
+     "EV-POLICY-DATA"
+    ],
+    "owner": "Marcus Webb",
+    "owner_title": "Privacy Counsel",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-01.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-DSP-01",
+   "score": 71.67,
+   "draft": {
+    "response": "Yes",
+    "text": "The Data Protection and Privacy Policy (v2.1) governs the full data lifecycle \u2014 collection, use, retention, and deletion \u2014 for customer and personal data. It is approved by Privacy Counsel, communicated at onboarding, and reviewed annually.",
+    "evidence": [
+     "EV-POLICY-DATA"
+    ],
+    "owner": "Marcus Webb",
+    "owner_title": "Privacy Counsel",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-02.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-DSP-08",
+   "score": 63.85,
+   "draft": {
+    "response": "Yes",
+    "text": "Electronic media is sanitized per media type before disposal or reuse; paper containing personal data is cross-shredded. Cloud media sanitization is inherited from AWS; corporate devices go through the ITAD process with certificates of destruction.",
+    "evidence": [
+     "EV-JAMF-COMPLIANCE",
+     "EV-AWS-SOC2"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-06-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-03.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-DSP-02",
+   "score": 63.25,
+   "draft": {
+    "response": "Yes",
+    "text": "A data inventory catalogs personal and sensitive data stores (application databases, analytics warehouse, support tooling) with data types, locations, and retention periods. It is maintained by Privacy Counsel and reviewed annually.",
+    "evidence": [
+     "EV-DATAFLOW"
+    ],
+    "owner": "Marcus Webb",
+    "owner_title": "Privacy Counsel",
+    "last_reviewed": "2026-07-15",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-04.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-DSP-03",
+   "score": 71.74,
+   "draft": {
+    "response": "Yes",
+    "text": "Data is classified as Public, Internal, Confidential, or Restricted per the classification scheme in the Data Protection Policy. Customer production data defaults to Confidential; credentials and keys are Restricted.",
+    "evidence": [
+     "EV-POLICY-DATA"
+    ],
+    "owner": "Marcus Webb",
+    "owner_title": "Privacy Counsel",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-05.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-DSP-04",
+   "score": 92.92,
+   "draft": {
+    "response": "Yes",
+    "text": "Data flow diagrams document what customer data is processed, where it is stored, and which subprocessors are involved. They are reviewed at least annually and after material architecture changes; last review 2026-07-15.",
+    "evidence": [
+     "EV-DATAFLOW"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-07-15",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-05.2",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-DSP-04",
+   "score": 68.8,
+   "draft": {
+    "response": "Yes",
+    "text": "Data flow diagrams document what customer data is processed, where it is stored, and which subprocessors are involved. They are reviewed at least annually and after material architecture changes; last review 2026-07-15.",
+    "evidence": [
+     "EV-DATAFLOW"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-07-15",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-06.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-DSP-02",
+   "score": 48.77,
+   "draft": {
+    "response": "Yes",
+    "text": "A data inventory catalogs personal and sensitive data stores (application databases, analytics warehouse, support tooling) with data types, locations, and retention periods. It is maintained by Privacy Counsel and reviewed annually.",
+    "evidence": [
+     "EV-DATAFLOW"
+    ],
+    "owner": "Marcus Webb",
+    "owner_title": "Privacy Counsel",
+    "last_reviewed": "2026-07-15",
+    "action": "SME review: confirm the matched answer (score 48.77, margin 11.77) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-06.2",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-DSP-04",
+   "score": 42.5,
+   "draft": {
+    "response": "Yes",
+    "text": "Data flow diagrams document what customer data is processed, where it is stored, and which subprocessors are involved. They are reviewed at least annually and after material architecture changes; last review 2026-07-15.",
+    "evidence": [
+     "EV-DATAFLOW"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-07-15",
+    "action": "SME review: confirm the matched answer (score 42.5, margin 13.75) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-07.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 26.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-08.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 26.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-08.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 21.88,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-09.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-DSP-05",
+   "score": 58.67,
+   "draft": {
+    "response": "Yes",
+    "text": "DPIAs are conducted for new processing of personal data and material changes. The 2026 DPIA for the analytics pipeline v2 covered lawful basis, data minimization, retention, and subprocessor review, with all actions closed.",
+    "evidence": [
+     "EV-DPIA-2026"
+    ],
+    "owner": "Marcus Webb",
+    "owner_title": "Privacy Counsel",
+    "last_reviewed": "2026-08-01",
+    "action": "SME review: confirm the matched answer (score 58.67, margin 34.94) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-10.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 27.22,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-11.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 26.26,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-12.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 27.97,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-13.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 25.79,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-14.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 26.54,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-15.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 24.45,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-16.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-DSP-06",
+   "score": 51.35,
+   "draft": {
+    "response": "Yes",
+    "text": "Retention schedules are defined per data category (e.g., customer data retained for the contract term plus 90 days, logs 13 months) and enforced by automated lifecycle rules. Deletion requests are actioned within 30 days.",
+    "evidence": [
+     "EV-POLICY-DATA"
+    ],
+    "owner": "Marcus Webb",
+    "owner_title": "Privacy Counsel",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-17.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 33.33,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-18.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 31.64,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-18.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 18.06,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "DSP-19.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 29.04,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "GRC-01.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-GRC-01",
+   "score": 85.3,
+   "draft": {
+    "response": "Yes",
+    "text": "The information governance program is sponsored by the CEO and run by the CISO, covering all CCM-relevant domains. Program status is reported to leadership quarterly and the policy set is reviewed annually.",
+    "evidence": [
+     "EV-POLICY-INFOSEC",
+     "EV-RISK-REGISTER"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "GRC-01.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-GRC-01",
+   "score": 70.48,
+   "draft": {
+    "response": "Yes",
+    "text": "The information governance program is sponsored by the CEO and run by the CISO, covering all CCM-relevant domains. Program status is reported to leadership quarterly and the policy set is reviewed annually.",
+    "evidence": [
+     "EV-POLICY-INFOSEC",
+     "EV-RISK-REGISTER"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "GRC-02.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-GRC-02",
+   "score": 63.58,
+   "draft": {
+    "response": "Yes",
+    "text": "A formal risk management program is documented in the Information Security Policy: risks are identified, assessed, and tracked in a quarterly-reviewed risk register with assigned owners and treatment plans.",
+    "evidence": [
+     "EV-RISK-REGISTER"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-09-30",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "GRC-03.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 30.71,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "GRC-04.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-GRC-03",
+   "score": 37.3,
+   "draft": {
+    "response": "Yes",
+    "text": "Policy exceptions require a documented risk acceptance signed by the CISO with compensating controls and an expiry date (max 12 months). Exceptions are tracked in the GRC register and re-evaluated at expiry.",
+    "evidence": [
+     "EV-POLICY-INFOSEC",
+     "EV-RISK-REGISTER"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "GRC-05.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-GRC-01",
+   "score": 46.81,
+   "draft": {
+    "response": "Yes",
+    "text": "The information governance program is sponsored by the CEO and run by the CISO, covering all CCM-relevant domains. Program status is reported to leadership quarterly and the policy set is reviewed annually.",
+    "evidence": [
+     "EV-POLICY-INFOSEC",
+     "EV-RISK-REGISTER"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "GRC-06.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 21.11,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "GRC-07.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-GRC-04",
+   "score": 65.61,
+   "draft": {
+    "response": "Yes",
+    "text": "Applicable requirements (SOC 2, PIPEDA, customer contractual security clauses) are identified in the compliance register and mapped to controls. New regulations are assessed by Privacy Counsel and the CISO as they emerge.",
+    "evidence": [
+     "EV-SOC2-2026",
+     "EV-RISK-REGISTER"
+    ],
+    "owner": "Marcus Webb",
+    "owner_title": "Privacy Counsel",
+    "last_reviewed": "2026-09-30",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "GRC-08.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 15.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-01.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-HRS-01",
+   "score": 47.94,
+   "draft": {
+    "response": "Yes",
+    "text": "Background verification (identity, employment history, education; criminal check where permitted by Ontario law) is completed for all new hires before their start date, administered through a third-party provider.",
+    "evidence": [
+     "EV-TRAINING-2026"
+    ],
+    "owner": "Aisha Bello",
+    "owner_title": "HR Manager",
+    "last_reviewed": "2026-01-15",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-01.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 33.1,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-01.3",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-HRS-01",
+   "score": 70.74,
+   "draft": {
+    "response": "Yes",
+    "text": "Background verification (identity, employment history, education; criminal check where permitted by Ontario law) is completed for all new hires before their start date, administered through a third-party provider.",
+    "evidence": [
+     "EV-TRAINING-2026"
+    ],
+    "owner": "Aisha Bello",
+    "owner_title": "HR Manager",
+    "last_reviewed": "2026-01-15",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-02.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-HRS-02",
+   "score": 51.38,
+   "draft": {
+    "response": "Yes",
+    "text": "The Acceptable Use Policy defines permitted use of company devices, data, and networks, including prohibitions on unauthorized software and data exfiltration. All employees acknowledge it at onboarding.",
+    "evidence": [
+     "EV-POLICY-REMOTE"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2025-12-01",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-02.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-HRS-02",
+   "score": 51.38,
+   "draft": {
+    "response": "Yes",
+    "text": "The Acceptable Use Policy defines permitted use of company devices, data, and networks, including prohibitions on unauthorized software and data exfiltration. All employees acknowledge it at onboarding.",
+    "evidence": [
+     "EV-POLICY-REMOTE"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2025-12-01",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-03.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-HRS-03",
+   "score": 70.62,
+   "draft": {
+    "response": "Yes",
+    "text": "The clean-desk and clear-screen policy requires locking devices when unattended (auto-lock enforced via Jamf at 5 minutes) and securing confidential documents. It is covered in onboarding and annual training.",
+    "evidence": [
+     "EV-TRAINING-2026",
+     "EV-JAMF-COMPLIANCE"
+    ],
+    "owner": "Aisha Bello",
+    "owner_title": "HR Manager",
+    "last_reviewed": "2026-10-25",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-03.2",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-HRS-03",
+   "score": 70.62,
+   "draft": {
+    "response": "Yes",
+    "text": "The clean-desk and clear-screen policy requires locking devices when unattended (auto-lock enforced via Jamf at 5 minutes) and securing confidential documents. It is covered in onboarding and annual training.",
+    "evidence": [
+     "EV-TRAINING-2026",
+     "EV-JAMF-COMPLIANCE"
+    ],
+    "owner": "Aisha Bello",
+    "owner_title": "HR Manager",
+    "last_reviewed": "2026-10-25",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-04.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-HRS-04",
+   "score": 75.32,
+   "draft": {
+    "response": "Yes",
+    "text": "Remote work requirements (encrypted devices, VPN for admin access, no public Wi-Fi without VPN, physical security of devices) are defined in the Remote Work Policy and enforced through Jamf and Okta device trust.",
+    "evidence": [
+     "EV-POLICY-REMOTE",
+     "EV-JAMF-COMPLIANCE"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2025-12-01",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-04.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-HRS-04",
+   "score": 75.32,
+   "draft": {
+    "response": "Yes",
+    "text": "Remote work requirements (encrypted devices, VPN for admin access, no public Wi-Fi without VPN, physical security of devices) are defined in the Remote Work Policy and enforced through Jamf and Okta device trust.",
+    "evidence": [
+     "EV-POLICY-REMOTE",
+     "EV-JAMF-COMPLIANCE"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2025-12-01",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-05.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-HRS-05",
+   "score": 72.0,
+   "draft": {
+    "response": "Yes",
+    "text": "Offboarding revokes all access within 24 hours of termination via the Okta-integrated checklist, and company assets must be returned within 5 business days. Asset return is tracked in the IT ticket system.",
+    "evidence": [
+     "EV-ACCESS-REVIEW-Q3"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-10-10",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-06.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 28.75,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-07.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-HRS-06",
+   "score": 43.11,
+   "draft": {
+    "response": "Yes",
+    "text": "Every employee signs an employment agreement with confidentiality and IP assignment clauses before receiving system access. Contractors sign equivalent agreements through the contracting process.",
+    "evidence": [
+     "EV-TRAINING-2026"
+    ],
+    "owner": "Aisha Bello",
+    "owner_title": "HR Manager",
+    "last_reviewed": "2026-01-15",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-08.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 25.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-09.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 31.73,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-10.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 26.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-11.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-HRS-07",
+   "score": 81.99,
+   "draft": {
+    "response": "Yes",
+    "text": "All employees complete security awareness training at onboarding and annually, plus quarterly phishing simulations. Completion is tracked; the 2026 cycle reached 100% completion and phishing click-through fell to 4%.",
+    "evidence": [
+     "EV-TRAINING-2026"
+    ],
+    "owner": "Aisha Bello",
+    "owner_title": "HR Manager",
+    "last_reviewed": "2026-10-25",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-11.2",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-HRS-07",
+   "score": 81.57,
+   "draft": {
+    "response": "Yes",
+    "text": "All employees complete security awareness training at onboarding and annually, plus quarterly phishing simulations. Completion is tracked; the 2026 cycle reached 100% completion and phishing click-through fell to 4%.",
+    "evidence": [
+     "EV-TRAINING-2026"
+    ],
+    "owner": "Aisha Bello",
+    "owner_title": "HR Manager",
+    "last_reviewed": "2026-10-25",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-12.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-HRS-07",
+   "score": 53.94,
+   "draft": {
+    "response": "Yes",
+    "text": "All employees complete security awareness training at onboarding and annually, plus quarterly phishing simulations. Completion is tracked; the 2026 cycle reached 100% completion and phishing click-through fell to 4%.",
+    "evidence": [
+     "EV-TRAINING-2026"
+    ],
+    "owner": "Aisha Bello",
+    "owner_title": "HR Manager",
+    "last_reviewed": "2026-10-25",
+    "action": "SME review: confirm the matched answer (score 53.94, margin 29.77) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-12.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 25.58,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "HRS-13.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 27.04,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-01.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-IAM-01",
+   "score": 92.0,
+   "draft": {
+    "response": "Yes",
+    "text": "Identity and access management requirements are defined in the Information Security Policy: centralized identity via Okta, role-based access, and quarterly access reviews. The policy is reviewed annually.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-01.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-IAM-01",
+   "score": 92.0,
+   "draft": {
+    "response": "Yes",
+    "text": "Identity and access management requirements are defined in the Information Security Policy: centralized identity via Okta, role-based access, and quarterly access reviews. The policy is reviewed annually.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-02.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-IAM-02",
+   "score": 91.07,
+   "draft": {
+    "response": "Yes",
+    "text": "Passwords must meet complexity and length requirements enforced by Okta; MFA is mandatory for all users on all applications, using authenticator apps or hardware keys. Passwordless options are being piloted for engineering.",
+    "evidence": [
+     "EV-ACCESS-REVIEW-Q3"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-10-10",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-02.2",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-IAM-02",
+   "score": 91.07,
+   "draft": {
+    "response": "Yes",
+    "text": "Passwords must meet complexity and length requirements enforced by Okta; MFA is mandatory for all users on all applications, using authenticator apps or hardware keys. Passwordless options are being piloted for engineering.",
+    "evidence": [
+     "EV-ACCESS-REVIEW-Q3"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-10-10",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-03.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-IAM-01",
+   "score": 38.57,
+   "draft": {
+    "response": "Yes",
+    "text": "Identity and access management requirements are defined in the Information Security Policy: centralized identity via Okta, role-based access, and quarterly access reviews. The policy is reviewed annually.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-04.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-IAM-07",
+   "score": 49.72,
+   "draft": {
+    "response": "Yes",
+    "text": "Least privilege is enforced through role-based access profiles in Okta and AWS IAM; separation of duties is applied to financial and deployment approvals (e.g., the person deploying cannot approve their own change).",
+    "evidence": [
+     "EV-POLICY-CHANGE"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-06-01",
+    "action": "SME review: confirm the matched answer (score 49.72, margin 13.76) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-05.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-IAM-07",
+   "score": 46.79,
+   "draft": {
+    "response": "Yes",
+    "text": "Least privilege is enforced through role-based access profiles in Okta and AWS IAM; separation of duties is applied to financial and deployment approvals (e.g., the person deploying cannot approve their own change).",
+    "evidence": [
+     "EV-POLICY-CHANGE"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-06-01",
+    "action": "SME review: confirm the matched answer (score 46.79, margin 16.08) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-06.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-IAM-03",
+   "score": 75.32,
+   "draft": {
+    "response": "Yes",
+    "text": "Access provisioning follows a documented joiner process: HR triggers Okta onboarding, managers approve role-based app assignments, and every grant is logged. Privileged access requires CISO or delegate approval.",
+    "evidence": [
+     "EV-ACCESS-REVIEW-Q3"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-10-10",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-07.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-IAM-01",
+   "score": 48.06,
+   "draft": {
+    "response": "Yes",
+    "text": "Identity and access management requirements are defined in the Information Security Policy: centralized identity via Okta, role-based access, and quarterly access reviews. The policy is reviewed annually.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-08.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-IAM-05",
+   "score": 46.62,
+   "draft": {
+    "response": "Yes",
+    "text": "User access is reviewed quarterly by application owners against least-privilege and separation-of-duties rules; the Q3 2026 review covered all production systems and resulted in 14 access removals.",
+    "evidence": [
+     "EV-ACCESS-REVIEW-Q3"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-10-10",
+    "action": "SME review: confirm the matched answer (score 46.62, margin 14.4) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-09.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-IAM-06",
+   "score": 51.66,
+   "draft": {
+    "response": "Yes",
+    "text": "Privileged access is segregated from standard accounts: administrators use separate privileged accounts with MFA, session recording for production access, and just-in-time elevation for break-glass scenarios.",
+    "evidence": [
+     "EV-ACCESS-REVIEW-Q3"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-10",
+    "action": "SME review: confirm the matched answer (score 51.66, margin 26.95) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-10.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-IAM-06",
+   "score": 63.15,
+   "draft": {
+    "response": "Yes",
+    "text": "Privileged access is segregated from standard accounts: administrators use separate privileged accounts with MFA, session recording for production access, and just-in-time elevation for break-glass scenarios.",
+    "evidence": [
+     "EV-ACCESS-REVIEW-Q3"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-10",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-10.2",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-IAM-06",
+   "score": 42.84,
+   "draft": {
+    "response": "Yes",
+    "text": "Privileged access is segregated from standard accounts: administrators use separate privileged accounts with MFA, session recording for production access, and just-in-time elevation for break-glass scenarios.",
+    "evidence": [
+     "EV-ACCESS-REVIEW-Q3"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-10",
+    "action": "SME review: confirm the matched answer (score 42.84, margin 9.2) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-11.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-IAM-06",
+   "score": 47.31,
+   "draft": {
+    "response": "Yes",
+    "text": "Privileged access is segregated from standard accounts: administrators use separate privileged accounts with MFA, session recording for production access, and just-in-time elevation for break-glass scenarios.",
+    "evidence": [
+     "EV-ACCESS-REVIEW-Q3"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-10",
+    "action": "SME review: confirm the matched answer (score 47.31, margin 24.22) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-12.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-IAM-06",
+   "score": 50.59,
+   "draft": {
+    "response": "Yes",
+    "text": "Privileged access is segregated from standard accounts: administrators use separate privileged accounts with MFA, session recording for production access, and just-in-time elevation for break-glass scenarios.",
+    "evidence": [
+     "EV-ACCESS-REVIEW-Q3"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-10",
+    "action": "SME review: confirm the matched answer (score 50.59, margin 25.33) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-12.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 27.06,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-13.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 24.17,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-14.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 29.67,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-14.2",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-IAM-08",
+   "score": 37.53,
+   "draft": {
+    "response": "Yes",
+    "text": "Human access to systems requires SSO with MFA; service-to-service authentication uses short-lived tokens and mutual TLS with certificates managed by AWS ACM. Shared service accounts are prohibited for human use.",
+    "evidence": [
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-09-15",
+    "action": "SME review: confirm the matched answer (score 37.53, margin 17.03) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-15.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-CEK-07",
+   "score": 40.29,
+   "draft": {
+    "response": "Yes",
+    "text": "Unneeded KMS keys are scheduled for deletion with the minimum 7-day waiting period after confirming no encrypted data depends on them; application secrets are rotated then purged from the secrets manager.",
+    "evidence": [
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-09-15",
+    "action": "SME review: confirm the matched answer (score 40.29, margin 9.58) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IAM-16.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 28.41,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IPY-01.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-AIS-01",
+   "score": 36.99,
+   "draft": {
+    "response": "Yes",
+    "text": "The Application Security Policy (v3.0) defines secure development requirements for all Harbourline services: threat modeling for new features, mandatory code review, SAST in CI, and dependency scanning. It is reviewed annually by Security Engineering.",
+    "evidence": [
+     "EV-POLICY-APPSEC"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-02-15",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IPY-01.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 33.5,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IPY-01.3",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-AIS-01",
+   "score": 44.33,
+   "draft": {
+    "response": "Yes",
+    "text": "The Application Security Policy (v3.0) defines secure development requirements for all Harbourline services: threat modeling for new features, mandatory code review, SAST in CI, and dependency scanning. It is reviewed annually by Security Engineering.",
+    "evidence": [
+     "EV-POLICY-APPSEC"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-02-15",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IPY-01.4",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 27.22,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IPY-01.5",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 28.75,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IPY-02.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-IPY-01",
+   "score": 51.07,
+   "draft": {
+    "response": "Yes",
+    "text": "Customers can export their data at any time via the REST API and CSV export in the product UI. Export formats are documented in the developer docs.",
+    "evidence": [
+     "EV-POLICY-DATA"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-07-01",
+    "action": "SME review: confirm the matched answer (score 51.07, margin 31.07) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IPY-03.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-IPY-02",
+   "score": 79.78,
+   "draft": {
+    "response": "Yes",
+    "text": "All management and data interfaces use TLS 1.2+ with standard protocols (HTTPS REST APIs); legacy or insecure protocols are disabled at the load balancer.",
+    "evidence": [
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-09-15",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IPY-04.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 34.03,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-01.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-IVS-01",
+   "score": 91.38,
+   "draft": {
+    "response": "Yes",
+    "text": "Infrastructure security requirements (VPC design, security groups, network segmentation) are defined in the infrastructure baseline. Production, staging, and development run in separate AWS accounts with no cross-account trust except the deployment pipeline.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-06-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-01.2",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-IVS-01",
+   "score": 91.38,
+   "draft": {
+    "response": "Yes",
+    "text": "Infrastructure security requirements (VPC design, security groups, network segmentation) are defined in the infrastructure baseline. Production, staging, and development run in separate AWS accounts with no cross-account trust except the deployment pipeline.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-06-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-02.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 19.23,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-03.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-IVS-02",
+   "score": 70.83,
+   "draft": {
+    "response": "Yes",
+    "text": "Inter-service traffic is encrypted with mutual TLS; VPC flow logs and security group change logs are collected centrally. Network configurations are reviewed annually and on architecture change.",
+    "evidence": [
+     "EV-DATADOG-LOGS"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-20",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-03.2",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-IVS-02",
+   "score": 70.4,
+   "draft": {
+    "response": "Yes",
+    "text": "Inter-service traffic is encrypted with mutual TLS; VPC flow logs and security group change logs are collected centrally. Network configurations are reviewed annually and on architecture change.",
+    "evidence": [
+     "EV-DATADOG-LOGS"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-20",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-03.3",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-IVS-02",
+   "score": 43.19,
+   "draft": {
+    "response": "Yes",
+    "text": "Inter-service traffic is encrypted with mutual TLS; VPC flow logs and security group change logs are collected centrally. Network configurations are reviewed annually and on architecture change.",
+    "evidence": [
+     "EV-DATADOG-LOGS"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-20",
+    "action": "SME review: confirm the matched answer (score 43.19, margin 21.31) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-03.4",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-IVS-02",
+   "score": 70.42,
+   "draft": {
+    "response": "Yes",
+    "text": "Inter-service traffic is encrypted with mutual TLS; VPC flow logs and security group change logs are collected centrally. Network configurations are reviewed annually and on architecture change.",
+    "evidence": [
+     "EV-DATADOG-LOGS"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-20",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-03.5",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 26.31,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-04.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 31.01,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-05.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-IVS-04",
+   "score": 91.67,
+   "draft": {
+    "response": "Yes",
+    "text": "Production and non-production environments are fully separated: distinct AWS accounts, networks, data, and access roles. Production data is never used in lower environments; staging uses synthetic data.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-06-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-06.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 18.06,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-07.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-IVS-05",
+   "score": 60.36,
+   "draft": {
+    "response": "Yes",
+    "text": "Only TLS 1.2+ with approved cipher suites is permitted for service communication; deprecated protocols are blocked at the load balancer and verified by quarterly external scans.",
+    "evidence": [
+     "EV-PENTEST-2026"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-09-02",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-08.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 28.75,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "IVS-09.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 24.17,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-01.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-LOG-01",
+   "score": 71.76,
+   "draft": {
+    "response": "Yes",
+    "text": "Logging and monitoring requirements are defined in the Information Security Policy: what is logged, centralized collection, 13-month retention, and restricted access. The policy is reviewed annually.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-01.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-LOG-01",
+   "score": 70.59,
+   "draft": {
+    "response": "Yes",
+    "text": "Logging and monitoring requirements are defined in the Information Security Policy: what is logged, centralized collection, 13-month retention, and restricted access. The policy is reviewed annually.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-02.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-LOG-01",
+   "score": 35.62,
+   "draft": {
+    "response": "Yes",
+    "text": "Logging and monitoring requirements are defined in the Information Security Policy: what is logged, centralized collection, 13-month retention, and restricted access. The policy is reviewed annually.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-03.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-LOG-02",
+   "score": 79.03,
+   "draft": {
+    "response": "Yes",
+    "text": "Security-relevant events (authentication failures, privilege escalation, WAF blocks, anomalous API usage) are monitored in Datadog with alerts routed to the on-call security engineer via PagerDuty.",
+    "evidence": [
+     "EV-DATADOG-LOGS"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-20",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-03.2",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-LOG-02",
+   "score": 37.28,
+   "draft": {
+    "response": "Yes",
+    "text": "Security-relevant events (authentication failures, privilege escalation, WAF blocks, anomalous API usage) are monitored in Datadog with alerts routed to the on-call security engineer via PagerDuty.",
+    "evidence": [
+     "EV-DATADOG-LOGS"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-20",
+    "action": "SME review: confirm the matched answer (score 37.28, margin 11.28) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-04.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-LOG-03",
+   "score": 76.0,
+   "draft": {
+    "response": "Yes",
+    "text": "Audit logs are immutable (WORM S3 bucket) and access is restricted to the security and platform teams; every access to audit logs is itself logged.",
+    "evidence": [
+     "EV-DATADOG-LOGS"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-20",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-05.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 31.86,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-05.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 21.11,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-06.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-LOG-04",
+   "score": 84.86,
+   "draft": {
+    "response": "Yes",
+    "text": "All systems synchronize to AWS Time Sync Service (NTP) so log timestamps are consistent across the fleet; drift is monitored.",
+    "evidence": [
+     "EV-DATADOG-LOGS"
+    ],
+    "owner": "Sam Reyes",
+    "owner_title": "DevOps Lead",
+    "last_reviewed": "2026-10-20",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-07.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-LOG-01",
+   "score": 39.03,
+   "draft": {
+    "response": "Yes",
+    "text": "Logging and monitoring requirements are defined in the Information Security Policy: what is logged, centralized collection, 13-month retention, and restricted access. The policy is reviewed annually.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-07.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 15.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-08.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-LOG-05",
+   "score": 92.27,
+   "draft": {
+    "response": "Yes",
+    "text": "Audit records capture who, what, when, and where for security-relevant actions and are protected from modification via immutable storage with restricted write access.",
+    "evidence": [
+     "EV-DATADOG-LOGS"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-20",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-09.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-LOG-05",
+   "score": 65.43,
+   "draft": {
+    "response": "Yes",
+    "text": "Audit records capture who, what, when, and where for security-relevant actions and are protected from modification via immutable storage with restricted write access.",
+    "evidence": [
+     "EV-DATADOG-LOGS"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-20",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-10.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-CEK-01",
+   "score": 40.43,
+   "draft": {
+    "response": "Yes",
+    "text": "Cryptography and key management requirements are defined in the Information Security Policy and the AppSec baseline: approved algorithms, KMS usage, and role assignments. The Security Engineer owns the key management program; the CISO approves exceptions.",
+    "evidence": [
+     "EV-POLICY-INFOSEC",
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-11.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-LOG-06",
+   "score": 79.05,
+   "draft": {
+    "response": "Yes",
+    "text": "KMS key lifecycle events (creation, rotation, disable, deletion scheduling) are logged to CloudTrail and alerted to the security team.",
+    "evidence": [
+     "EV-CRYPTO-INVENTORY"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-09-15",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-12.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 29.11,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-13.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 21.88,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "LOG-13.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 24.17,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "SEF-01.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-SEF-01",
+   "score": 92.5,
+   "draft": {
+    "response": "Yes",
+    "text": "The Incident Response Plan (v3.2) defines roles, severity levels, escalation paths, and forensics procedures including evidence preservation for cloud workloads. It is reviewed annually.",
+    "evidence": [
+     "EV-IR-PLAN"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-07-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "SEF-01.2",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-SEF-01",
+   "score": 70.43,
+   "draft": {
+    "response": "Yes",
+    "text": "The Incident Response Plan (v3.2) defines roles, severity levels, escalation paths, and forensics procedures including evidence preservation for cloud workloads. It is reviewed annually.",
+    "evidence": [
+     "EV-IR-PLAN"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-07-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "SEF-02.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-SEF-01",
+   "score": 52.04,
+   "draft": {
+    "response": "Yes",
+    "text": "The Incident Response Plan (v3.2) defines roles, severity levels, escalation paths, and forensics procedures including evidence preservation for cloud workloads. It is reviewed annually.",
+    "evidence": [
+     "EV-IR-PLAN"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-07-01",
+    "action": "SME review: confirm the matched answer (score 52.04, margin 14.94) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "SEF-02.2",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-SEF-01",
+   "score": 52.04,
+   "draft": {
+    "response": "Yes",
+    "text": "The Incident Response Plan (v3.2) defines roles, severity levels, escalation paths, and forensics procedures including evidence preservation for cloud workloads. It is reviewed annually.",
+    "evidence": [
+     "EV-IR-PLAN"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-07-01",
+    "action": "SME review: confirm the matched answer (score 52.04, margin 14.94) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "SEF-03.1",
+   "route": "REVIEW",
+   "flags": [
+    "WORDING_CHANGED"
+   ],
+   "answer_id": "HL-SEF-02",
+   "score": 51.68,
+   "draft": {
+    "response": "Yes",
+    "text": "The incident response plan is tested annually through a tabletop exercise; the June 2026 exercise simulated a credential-compromise scenario and produced four improvement actions, all closed.",
+    "evidence": [
+     "EV-TABLETOP-2026"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-06-18",
+    "action": "Question wording changed since the last round \u2014 confirm the approved answer still applies, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "SEF-04.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-SEF-02",
+   "score": 60.3,
+   "draft": {
+    "response": "Yes",
+    "text": "The incident response plan is tested annually through a tabletop exercise; the June 2026 exercise simulated a credential-compromise scenario and produced four improvement actions, all closed.",
+    "evidence": [
+     "EV-TABLETOP-2026"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-06-18",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "SEF-05.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-SEF-04",
+   "score": 60.05,
+   "draft": {
+    "response": "Yes",
+    "text": "Incident metrics (time to detect, time to respond, incidents by severity) are tracked and reviewed monthly by the security team. In 2026 there were no Severity-1 incidents.",
+    "evidence": [
+     "EV-DATADOG-LOGS"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-20",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "SEF-06.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 26.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "SEF-07.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-SEF-03",
+   "score": 67.03,
+   "draft": {
+    "response": "Yes",
+    "text": "Breach notification procedures define assessment, containment, and notification timelines aligned with PIPEDA and contractual obligations (customer notification without unreasonable delay). Contact lists for regulators and law enforcement are maintained in the IR plan.",
+    "evidence": [
+     "EV-IR-PLAN"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-07-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "SEF-07.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 26.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "SEF-08.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-SEF-05",
+   "score": 46.2,
+   "draft": {
+    "response": "Yes",
+    "text": "Points of contact for the Privacy Commissioner of Canada, relevant US authorities for US customers, and Toronto law enforcement are maintained in the incident response plan and verified annually.",
+    "evidence": [
+     "EV-IR-PLAN"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-07-01",
+    "action": "SME review: confirm the matched answer (score 46.2, margin 10.94) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-01.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-STA-01",
+   "score": 63.75,
+   "draft": {
+    "response": "Yes",
+    "text": "Harbourline documents its shared responsibility model: AWS secures the underlying cloud infrastructure; Harbourline secures its applications, data, and configurations. The model is published in the trust center and customer security documentation.",
+    "evidence": [
+     "EV-AWS-SOC2"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-04-01",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-01.2",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 28.75,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-02.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-STA-01",
+   "score": 42.8,
+   "draft": {
+    "response": "Yes",
+    "text": "Harbourline documents its shared responsibility model: AWS secures the underlying cloud infrastructure; Harbourline secures its applications, data, and configurations. The model is published in the trust center and customer security documentation.",
+    "evidence": [
+     "EV-AWS-SOC2"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-04-01",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-03.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 31.78,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-04.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 30.0,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-05.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-STA-01",
+   "score": 38.57,
+   "draft": {
+    "response": "Yes",
+    "text": "Harbourline documents its shared responsibility model: AWS secures the underlying cloud infrastructure; Harbourline secures its applications, data, and configurations. The model is published in the trust center and customer security documentation.",
+    "evidence": [
+     "EV-AWS-SOC2"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-04-01",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-06.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 22.86,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-07.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-STA-02",
+   "score": 92.0,
+   "draft": {
+    "response": "Yes",
+    "text": "An inventory of supply chain relationships and subprocessors (AWS, Okta, Datadog, GitHub, etc.) is maintained by Legal and published in the trust center; it is reviewed whenever a vendor is added or removed.",
+    "evidence": [
+     "EV-SUBPROCESSORS"
+    ],
+    "owner": "Marcus Webb",
+    "owner_title": "Privacy Counsel",
+    "last_reviewed": "2026-09-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-08.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-STA-03",
+   "score": 66.56,
+   "draft": {
+    "response": "Yes",
+    "text": "Vendors with access to customer data undergo a risk assessment before onboarding and annually thereafter, covering SOC 2 reports, security questionnaires, and financial viability. Findings are tracked to closure.",
+    "evidence": [
+     "EV-VENDOR-ASSESS"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-06-30",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-09.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 20.41,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-10.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-STA-04",
+   "score": 69.11,
+   "draft": {
+    "response": "Yes",
+    "text": "Vendor agreements include security and confidentiality requirements and are reviewed at least annually; DPAs are in place with all subprocessors processing personal data.",
+    "evidence": [
+     "EV-SUBPROCESSORS"
+    ],
+    "owner": "Marcus Webb",
+    "owner_title": "Privacy Counsel",
+    "last_reviewed": "2026-09-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-11.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 19.58,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-12.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 30.1,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-13.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-STA-03",
+   "score": 38.9,
+   "draft": {
+    "response": "Yes",
+    "text": "Vendors with access to customer data undergo a risk assessment before onboarding and annually thereafter, covering SOC 2 reports, security questionnaires, and financial viability. Findings are tracked to closure.",
+    "evidence": [
+     "EV-VENDOR-ASSESS"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-06-30",
+    "action": "SME review: confirm the matched answer (score 38.9, margin 7.71) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "STA-14.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-STA-05",
+   "score": 78.17,
+   "draft": {
+    "response": "Yes",
+    "text": "Critical suppliers are reassessed annually via their SOC 2 reports or a security questionnaire; the H1 2026 assessment pack covered all 12 in-scope vendors with no unresolved high risks.",
+    "evidence": [
+     "EV-VENDOR-ASSESS"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-06-30",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "TVM-01.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 33.68,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "TVM-01.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-TVM-01",
+   "score": 92.11,
+   "draft": {
+    "response": "Yes",
+    "text": "Threat and vulnerability management is defined in the Information Security Policy: continuous scanning, risk-based prioritization, and defined remediation SLAs. The program is run by Security Engineering.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "TVM-02.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-TVM-02",
+   "score": 75.71,
+   "draft": {
+    "response": "Yes",
+    "text": "Managed endpoints run CrowdStrike Falcon with real-time protection; email attachments and URLs are filtered by Google Workspace security. Malware detections are alerted to the security team.",
+    "evidence": [
+     "EV-JAMF-COMPLIANCE"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-11-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "TVM-02.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-TVM-01",
+   "score": 42.93,
+   "draft": {
+    "response": "Yes",
+    "text": "Threat and vulnerability management is defined in the Information Security Policy: continuous scanning, risk-based prioritization, and defined remediation SLAs. The program is run by Security Engineering.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "TVM-03.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 31.92,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "TVM-04.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 22.86,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "TVM-05.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 28.24,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "TVM-06.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 26.33,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "TVM-07.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-TVM-03",
+   "score": 37.24,
+   "draft": {
+    "response": "Yes",
+    "text": "Patches are deployed via automated tooling (Jamf for endpoints, CI-built images for services) with SLAs by severity: critical within 15 days, high within 30. Compliance is tracked in the monthly vulnerability report.",
+    "evidence": [
+     "EV-VULNSCAN-Q3"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-15",
+    "action": "SME review: confirm the matched answer (score 37.24, margin 10.95) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "TVM-08.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-TVM-03",
+   "score": 63.27,
+   "draft": {
+    "response": "Yes",
+    "text": "Patches are deployed via automated tooling (Jamf for endpoints, CI-built images for services) with SLAs by severity: critical within 15 days, high within 30. Compliance is tracked in the monthly vulnerability report.",
+    "evidence": [
+     "EV-VULNSCAN-Q3"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-15",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "TVM-09.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-TVM-05",
+   "score": 64.32,
+   "draft": {
+    "response": "Yes",
+    "text": "Vulnerability identification and remediation are tracked in the security backlog with metrics (mean time to remediate by severity) reported monthly to the CISO.",
+    "evidence": [
+     "EV-VULNSCAN-Q3"
+    ],
+    "owner": "Daniel Okafor",
+    "owner_title": "Security Engineer",
+    "last_reviewed": "2026-10-15",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "TVM-10.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-TVM-06",
+   "score": 64.42,
+   "draft": {
+    "response": "Yes",
+    "text": "Vulnerability metrics \u2014 open findings by severity, SLA adherence, and mean time to remediate \u2014 are established, monitored in the monthly security report, and reviewed with engineering leadership.",
+    "evidence": [
+     "EV-VULNSCAN-Q3"
+    ],
+    "owner": "Priya Nair",
+    "owner_title": "CISO",
+    "last_reviewed": "2026-10-15",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-01.1",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-UEM-01",
+   "score": 52.17,
+   "draft": {
+    "response": "Yes",
+    "text": "Endpoint security requirements are defined in the Information Security Policy and enforced via Jamf Pro: disk encryption, auto-lock, firewall, and approved software only.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-01.2",
+   "route": "REVERIFY",
+   "flags": [
+    "STALE_ANSWER"
+   ],
+   "answer_id": "HL-UEM-01",
+   "score": 80.5,
+   "draft": {
+    "response": "Yes",
+    "text": "Endpoint security requirements are defined in the Information Security Policy and enforced via Jamf Pro: disk encryption, auto-lock, firewall, and approved software only.",
+    "evidence": [
+     "EV-POLICY-INFOSEC"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-03-10",
+    "action": "Re-verify with the control owner (answer is past its 180-day review date), then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-02.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 26.34,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-03.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-UEM-05",
+   "score": 42.81,
+   "draft": {
+    "response": "Yes",
+    "text": "OS and application patches on endpoints are managed through Jamf with staged rollout rings; critical patches are pushed within 7 days. Compliance was 98% at the November 2026 check.",
+    "evidence": [
+     "EV-JAMF-COMPLIANCE"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-11-01",
+    "action": "SME review: confirm the matched answer (score 42.81, margin 20.93) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-04.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-UEM-02",
+   "score": 83.81,
+   "draft": {
+    "response": "Yes",
+    "text": "All company endpoints are enrolled in Jamf Pro at provisioning; the inventory is reconciled monthly and unverified devices are blocked from corporate resources by Okta device trust.",
+    "evidence": [
+     "EV-JAMF-COMPLIANCE"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-11-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-05.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 28.75,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-06.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-UEM-04",
+   "score": 78.47,
+   "draft": {
+    "response": "Yes",
+    "text": "Automatic lock screen is enforced at 5 minutes of inactivity on all managed endpoints via Jamf configuration profiles.",
+    "evidence": [
+     "EV-JAMF-COMPLIANCE"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-11-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-07.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-UEM-05",
+   "score": 73.6,
+   "draft": {
+    "response": "Yes",
+    "text": "OS and application patches on endpoints are managed through Jamf with staged rollout rings; critical patches are pushed within 7 days. Compliance was 98% at the November 2026 check.",
+    "evidence": [
+     "EV-JAMF-COMPLIANCE"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-11-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-08.1",
+   "route": "READY",
+   "flags": [],
+   "answer_id": "HL-UEM-03",
+   "score": 72.92,
+   "draft": {
+    "response": "Yes",
+    "text": "Full-disk encryption (FileVault/BitLocker) is enforced on all managed endpoints via Jamf; removable media is blocked by policy on devices handling customer data.",
+    "evidence": [
+     "EV-JAMF-COMPLIANCE"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-11-01",
+    "action": "Approve and export as-is."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-09.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 27.68,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-10.1",
+   "route": "REVIEW",
+   "flags": [],
+   "answer_id": "HL-UEM-04",
+   "score": 37.56,
+   "draft": {
+    "response": "Yes",
+    "text": "Automatic lock screen is enforced at 5 minutes of inactivity on all managed endpoints via Jamf configuration profiles.",
+    "evidence": [
+     "EV-JAMF-COMPLIANCE"
+    ],
+    "owner": "Lena Fischer",
+    "owner_title": "IT Manager",
+    "last_reviewed": "2026-11-01",
+    "action": "SME review: confirm the matched answer (score 37.56, margin 0.19) fits, then approve."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-11.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 30.3,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-12.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 30.71,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-13.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 29.06,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  },
+  {
+   "question_id": "UEM-14.1",
+   "route": "NEW",
+   "flags": [],
+   "answer_id": null,
+   "score": 17.12,
+   "draft": {
+    "response": null,
+    "text": "No approved answer covers this question. SME drafting brief: answer from first principles, cite the control owner, and attach fresh evidence before this response can be approved.",
+    "evidence": [],
+    "action": "Draft a new approved answer with the control owner, then re-run the matcher."
+   },
+   "pending_approval": true
+  }
+ ]
+}
