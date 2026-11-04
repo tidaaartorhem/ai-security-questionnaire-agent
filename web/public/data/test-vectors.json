@@ -1,0 +1,84 @@
+{
+ "vectors": [
+  {
+   "question_id": "A&A-01.2",
+   "domain": "A&A",
+   "question": "Are audit and assurance policies, procedures, and standards reviewed and updated at least annually?",
+   "expected_answer_id": "HL-AA-01",
+   "expected_route": "REVERIFY",
+   "expected_score": 71.54
+  },
+  {
+   "question_id": "CEK-01.2",
+   "domain": "CEK",
+   "question": "Are cryptography, encryption, and key management policies and procedures reviewed and updated at least annually?",
+   "expected_answer_id": "HL-CEK-01",
+   "expected_route": "REVERIFY",
+   "expected_score": 91.79
+  },
+  {
+   "question_id": "IVS-05.1",
+   "domain": "IVS",
+   "question": "Are production and non- production environments separated?",
+   "expected_answer_id": "HL-IVS-04",
+   "expected_route": "READY",
+   "expected_score": 91.67
+  },
+  {
+   "question_id": "LOG-06.1",
+   "domain": "LOG",
+   "question": "Is a reliable time source being used across all relevant information processing systems?",
+   "expected_answer_id": "HL-LOG-04",
+   "expected_route": "READY",
+   "expected_score": 84.86
+  },
+  {
+   "question_id": "HRS-11.2",
+   "domain": "HRS",
+   "question": "Are regular security awareness training updates provided?",
+   "expected_answer_id": "HL-HRS-07",
+   "expected_route": "READY",
+   "expected_score": 81.57
+  },
+  {
+   "question_id": "DSP-02.1",
+   "domain": "DSP",
+   "question": "Are industry-accepted methods applied for secure data disposal from storage media so information is not recoverable by any forensic means?",
+   "expected_answer_id": "HL-DSP-08",
+   "expected_route": "READY",
+   "expected_score": 63.85
+  },
+  {
+   "question_id": "TVM-02.1",
+   "domain": "TVM",
+   "question": "Are policies and procedures to protect against malware on managed assets established, documented, approved, communicated, applied, evaluated, and maintained?",
+   "expected_answer_id": "HL-TVM-02",
+   "expected_route": "READY",
+   "expected_score": 75.71
+  },
+  {
+   "question_id": "BCR-08.1",
+   "domain": "BCR",
+   "question": "Is cloud data periodically backed up?",
+   "expected_answer_id": "HL-BCR-04",
+   "expected_route": "READY",
+   "expected_score": 90.91
+  },
+  {
+   "question_id": "IAM-05.1",
+   "domain": "IAM",
+   "question": "Is the least privilege principle employed when implementing information system access?",
+   "expected_answer_id": "HL-IAM-07",
+   "expected_route": "REVIEW",
+   "expected_score": 46.79
+  },
+  {
+   "question_id": "UEM-12.1",
+   "domain": "UEM",
+   "question": "Are remote geolocation capabilities enabled for all managed mobile endpoints?",
+   "expected_answer_id": null,
+   "expected_route": "NEW",
+   "expected_score": 30.71
+  }
+ ]
+}

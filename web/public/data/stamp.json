@@ -1,0 +1,6 @@
+{
+ "repo": "tidaaartorhem/ai-security-questionnaire-agent",
+ "git_sha": "c699712",
+ "built_utc": "2026-11-04T14:12:58Z",
+ "pipeline": "questdesk LangGraph intake->match->freshness->route->draft->gate (zero LLM calls)"
+}

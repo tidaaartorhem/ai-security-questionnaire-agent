@@ -1,0 +1,284 @@
+{
+ "findings": {
+  "question_count": 261,
+  "routes": {
+   "REVERIFY": 61,
+   "REVIEW": 38,
+   "READY": 64,
+   "NEW": 98
+  },
+  "ready_pct": 24.5,
+  "flags": {
+   "STALE_ANSWER": 61,
+   "STALE_EVIDENCE": 2,
+   "WORDING_CHANGED": 3
+  },
+  "mean_match_confidence": 62.0,
+  "domain_table": {
+   "A&A": {
+    "total": 8,
+    "ready": 3,
+    "review": 2,
+    "reverify": 3,
+    "new": 0,
+    "coverage_pct": 100.0
+   },
+   "AIS": {
+    "total": 11,
+    "ready": 4,
+    "review": 1,
+    "reverify": 3,
+    "new": 3,
+    "coverage_pct": 72.7
+   },
+   "BCR": {
+    "total": 18,
+    "ready": 6,
+    "review": 3,
+    "reverify": 6,
+    "new": 3,
+    "coverage_pct": 83.3
+   },
+   "CCC": {
+    "total": 11,
+    "ready": 3,
+    "review": 0,
+    "reverify": 5,
+    "new": 3,
+    "coverage_pct": 72.7
+   },
+   "CEK": {
+    "total": 23,
+    "ready": 2,
+    "review": 6,
+    "reverify": 6,
+    "new": 9,
+    "coverage_pct": 60.9
+   },
+   "DCS": {
+    "total": 23,
+    "ready": 0,
+    "review": 2,
+    "reverify": 5,
+    "new": 16,
+    "coverage_pct": 30.4
+   },
+   "DSP": {
+    "total": 24,
+    "ready": 4,
+    "review": 3,
+    "reverify": 4,
+    "new": 13,
+    "coverage_pct": 45.8
+   },
+   "GRC": {
+    "total": 9,
+    "ready": 2,
+    "review": 0,
+    "reverify": 4,
+    "new": 3,
+    "coverage_pct": 66.7
+   },
+   "HRS": {
+    "total": 20,
+    "ready": 5,
+    "review": 1,
+    "reverify": 7,
+    "new": 7,
+    "coverage_pct": 65.0
+   },
+   "IAM": {
+    "total": 21,
+    "ready": 4,
+    "review": 9,
+    "reverify": 4,
+    "new": 4,
+    "coverage_pct": 81.0
+   },
+   "IPY": {
+    "total": 8,
+    "ready": 1,
+    "review": 1,
+    "reverify": 2,
+    "new": 4,
+    "coverage_pct": 50.0
+   },
+   "IVS": {
+    "total": 14,
+    "ready": 7,
+    "review": 1,
+    "reverify": 0,
+    "new": 6,
+    "coverage_pct": 57.1
+   },
+   "LOG": {
+    "total": 18,
+    "ready": 6,
+    "review": 1,
+    "reverify": 5,
+    "new": 6,
+    "coverage_pct": 66.7
+   },
+   "SEF": {
+    "total": 11,
+    "ready": 5,
+    "review": 4,
+    "reverify": 0,
+    "new": 2,
+    "coverage_pct": 81.8
+   },
+   "STA": {
+    "total": 15,
+    "ready": 4,
+    "review": 1,
+    "reverify": 3,
+    "new": 7,
+    "coverage_pct": 53.3
+   },
+   "TVM": {
+    "total": 12,
+    "ready": 4,
+    "review": 1,
+    "reverify": 2,
+    "new": 5,
+    "coverage_pct": 58.3
+   },
+   "UEM": {
+    "total": 15,
+    "ready": 4,
+    "review": 2,
+    "reverify": 2,
+    "new": 7,
+    "coverage_pct": 53.3
+   }
+  },
+  "worst_domains": [
+   [
+    "DCS",
+    {
+     "total": 23,
+     "ready": 0,
+     "review": 2,
+     "reverify": 5,
+     "new": 16,
+     "coverage_pct": 30.4
+    }
+   ],
+   [
+    "DSP",
+    {
+     "total": 24,
+     "ready": 4,
+     "review": 3,
+     "reverify": 4,
+     "new": 13,
+     "coverage_pct": 45.8
+    }
+   ],
+   [
+    "IPY",
+    {
+     "total": 8,
+     "ready": 1,
+     "review": 1,
+     "reverify": 2,
+     "new": 4,
+     "coverage_pct": 50.0
+    }
+   ]
+  ],
+  "effort_minutes": 6392,
+  "effort_hours": 106.5,
+  "sme_queue_owners": {
+   "Daniel Okafor": 39,
+   "Lena Fischer": 23,
+   "Priya Nair": 18,
+   "Sam Reyes": 9,
+   "Marcus Webb": 6,
+   "Aisha Bello": 4
+  }
+ },
+ "eval": {
+  "n": 41,
+  "routing_accuracy": 0.829,
+  "precision": 0.968,
+  "recall": 0.811
+ },
+ "eval_misses": [
+  {
+   "question_id": "BCR-04.1",
+   "expected": "HL-BCR-01",
+   "got": null,
+   "score": 29.31
+  },
+  {
+   "question_id": "CCC-01.2",
+   "expected": "HL-CCC-01",
+   "got": "HL-LOG-01",
+   "score": 55.59
+  },
+  {
+   "question_id": "GRC-03.1",
+   "expected": "HL-GRC-01",
+   "got": null,
+   "score": 30.71
+  },
+  {
+   "question_id": "IAM-14.1",
+   "expected": "HL-IAM-08",
+   "got": null,
+   "score": 29.67
+  },
+  {
+   "question_id": "IVS-03.5",
+   "expected": "HL-IVS-01",
+   "got": null,
+   "score": 26.31
+  },
+  {
+   "question_id": "STA-04.1",
+   "expected": "HL-STA-01",
+   "got": null,
+   "score": 30.0
+  },
+  {
+   "question_id": "UEM-05.1",
+   "expected": "HL-UEM-01",
+   "got": null,
+   "score": 28.75
+  }
+ ],
+ "config": {
+  "effort_minutes": {
+   "NEW": 45,
+   "READY": 3,
+   "REVERIFY": 20,
+   "REVIEW": 15
+  },
+  "freshness": {
+   "answer_stale_after_days": 180,
+   "evidence_stale_after_days": 365,
+   "wording_change_jaccard_below": 0.85
+  },
+  "note": "Scores are deterministic and disclosed. A match below min_match (50) is treated as unanswered (NEW).",
+  "replay_date": "2026-11-04",
+  "thresholds": {
+   "min_match": 35,
+   "review": 35,
+   "auto_ready": 60
+  },
+  "weights": {
+   "bigram_jaccard": 10,
+   "domain_boost": 15,
+   "exact_phrase": 20,
+   "keyword_recall": 55
+  },
+  "tuning_note": "Thresholds grid-searched on the 41-pair golden set (min_match=35, auto_ready=60); routing_accuracy=0.829, precision=0.968, recall=0.811."
+ },
+ "company": {
+  "name": "Harbourline Analytics Inc.",
+  "profile": "Fictional Toronto B2B SaaS (marketing analytics platform), ~90 employees, hosts on AWS ca-central-1, Okta workforce IdP, SOC 2 Type II.",
+  "fictional": true
+ },
+ "data_note": "Questions: real CSA CAIQ v4.0.2 question bank (261 questions, 17 domains). Answers and evidence describe the FICTIONAL Harbourline Analytics Inc. and are seeded demo data."
+}

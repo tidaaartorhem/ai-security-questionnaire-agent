@@ -1,0 +1,124 @@
+# QuestDesk — the security-questionnaire response desk
+
+Every B2B deal above a certain size ends the same way: a customer sends a
+300-question security questionnaire (usually a CAIQ or SIG spreadsheet) and
+wants it back in two weeks. The security team answers from last quarter's
+spreadsheet, copy-pastes from a stale "approved answers" doc, and nobody
+notices that three answers reference a penetration test from two years ago —
+until the customer's auditor does.
+
+QuestDesk is the response desk for that workflow. It takes an incoming
+vendor security questionnaire — the full 261-question CSA CAIQ v4.0.2 —
+matches every question against the company's approved answer library with
+disclosed deterministic scoring, checks that the matched answer and its
+evidence are still fresh, and routes each question to exactly one action:
+
+- **READY** — strong match, fresh answer: approve and export as-is
+- **REVIEW** — middling match or changed wording: an SME confirms first
+- **REVERIFY** — strong match but the answer (or its evidence) is stale:
+  re-confirm with the control owner before reuse
+- **NEW** — nothing in the library covers it: draft from scratch, no guessing
+
+Every response sits behind a human gate. Nothing is marked final
+automatically, and nothing is ever invented: below the match bar, the
+product says so and hands the question to a person.
+
+## How it runs
+
+A deterministic LangGraph `StateGraph` — `intake → match → freshness →
+route → draft → gate` — over the questionnaire, with zero LLM calls:
+
+1. **intake** loads the 261-question CAIQ round and the approved answer library.
+2. **match** scores every question against every answer (261 × 99 pairs).
+3. **freshness** flags answers past their 180-day review date, evidence older
+   than 365 days, and questions reworded since the previous round.
+4. **route** assigns READY / REVIEW / REVERIFY / NEW per the calibrated
+   thresholds below.
+5. **draft** assembles the response from the approved answer plus evidence
+   references, or an SME drafting brief for NEW questions.
+6. **gate** marks every item `pending_approval` — the export pack is a draft
+   until a human approves it.
+
+If `langgraph` is not installed the same nodes run sequentially with
+identical state — the pipeline does not depend on it.
+
+## The scoring (disclosed, no LLM)
+
+Per question–answer pair, 0–100:
+
+| Component | Weight |
+|---|---|
+| Keyword token recall (question tokens covered by the answer) | 55 |
+| Exact 3-gram phrase hit from the answer's keywords | 20 |
+| Bigram Jaccard similarity | 10 |
+| Domain boost (answer tagged to the question's CAIQ domain) | 15 |
+
+Thresholds were grid-searched on a 41-pair hand-labeled golden set:
+**min_match 35, auto_ready 60** → routing accuracy 0.829, precision 0.968,
+recall 0.811. The misses are listed in `data/raw/golden_set.json` and
+`web/public/data/summary.json` — mostly genuinely ambiguous boilerplate
+questions, reported honestly.
+
+## Data
+
+- **Questions: real.** The CSA CAIQ v4.0.2 question bank (261 questions, 17
+  domains), extracted from the publicly available AWS-completed CAIQ PDF.
+  Only the questionnaire text is used — none of AWS's responses are bundled.
+  CAIQ is published by the Cloud Security Alliance and is free to use for
+  vendor security assessments.
+- **Answers and evidence: seeded, labeled synthetic.** They describe the
+  fictional Harbourline Analytics Inc. (a Toronto B2B SaaS) — 99 approved
+  answers across 6 owners, 28 evidence artifacts. This is the product's
+  input, disclosed as such: a vendor starting its first questionnaire from
+  an approved library. 26 answers are deliberately past their 180-day review
+  date so the REVERIFY path is exercised on real pipeline output.
+
+## This round's numbers (replay date 2026-11-04)
+
+261 questions → **64 READY · 38 REVIEW · 61 REVERIFY · 98 NEW**.
+Estimated SME effort: 106.5 hours. Mean match confidence 62.0. Thinnest
+domains: DCS (30.4%), DSP (45.8%), IPY (50.0%) — the honest read is that the
+library covers about three-fifths of a full CAIQ, and the queue tells you
+exactly which answers to write next.
+
+## Repo layout
+
+```
+src/questdesk/        Python pipeline (text, matcher, graph, report, eval)
+scripts/
+  fetch_caiq.py       one-time CAIQ extraction (needs pdfplumber)
+  seed_library.py     builds the seeded answer/evidence libraries
+  build_web.py        runs the pipeline, writes web/public/data/*.json
+data/raw/             caiq_v402.json, answer_library.json, golden_set.json,
+                      scoring-config.json, previous_round.json, test-vectors.json
+data/outputs/         findings.json (pipeline run output)
+tests/                pytest suite (15 tests)
+web/                  React + TypeScript UI (light mode)
+  src/rules.ts        exact TS mirror of the Python matcher
+  src/rules.test.ts   vitest: 10 shared test-vectors + unit tests
+```
+
+`data/raw/test-vectors.json` is the shared contract: 10 question→answer
+pairs generated by the Python pipeline that the TypeScript mirror must
+reproduce exactly. The paste-a-question tab runs the same matcher in the
+browser.
+
+## Run it
+
+```bash
+pip install -r requirements.txt
+PYTHONPATH=src python -m questdesk.report   # run the full pipeline
+PYTHONPATH=src python -m pytest tests/ -q    # 15 tests
+cd web && npm install && npm test            # 18 vitest (incl. 10 contract vectors)
+cd web && npm run build                      # rebuilds payloads, then vite build
+```
+
+## Deploy
+
+Firebase Hosting (`ai-security-questionnaire-agent.web.app`):
+
+```bash
+firebase deploy --only hosting --project portfolio-3da31
+```
+
+Live: https://ai-security-questionnaire-agent.web.app

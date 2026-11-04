@@ -1,0 +1,1961 @@
+{
+ "answers": [
+  {
+   "id": "HL-AA-01",
+   "domains": [
+    "A&A"
+   ],
+   "keywords": "audit assurance policies procedures standards established documented approved communicated evaluated maintained",
+   "response": "Yes",
+   "text": "Harbourline maintains an Information Security Policy (v4.0) that includes audit and assurance requirements. Policies are approved by the CISO, published in the company handbook, communicated to all staff during onboarding, and evaluated for effectiveness as part of the annual SOC 2 readiness review.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-03-10",
+   "evidence": [
+    "EV-POLICY-INFOSEC",
+    "EV-SOC2-2025"
+   ],
+   "age_days": 239,
+   "stale": true
+  },
+  {
+   "id": "HL-AA-02",
+   "domains": [
+    "A&A"
+   ],
+   "keywords": "independent audit assurance assessment SOC 2 Type II annual external auditor",
+   "response": "Yes",
+   "text": "Harbourline undergoes an independent SOC 2 Type II audit annually, performed by Northgate Assurance LLP. The most recent report covers the period ending 2026-06-30 and was issued 2026-08-20. The audit is conducted under AICPA Trust Services Criteria and includes testing of security, availability, and confidentiality controls.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-08-20",
+   "evidence": [
+    "EV-SOC2-2026"
+   ],
+   "age_days": 76,
+   "stale": false
+  },
+  {
+   "id": "HL-AA-03",
+   "domains": [
+    "A&A"
+   ],
+   "keywords": "risk-based audit plan corrective action plan remediate audit findings remediation status stakeholders",
+   "response": "Yes",
+   "text": "Audit findings are tracked in a risk-ranked remediation register owned by the CISO. Each finding gets a severity, an owner, and a target date; critical findings require remediation within 30 days. Remediation status is reviewed monthly by leadership and reported to the board quarterly.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-09-30",
+   "evidence": [
+    "EV-RISK-REGISTER",
+    "EV-SOC2-2026"
+   ],
+   "age_days": 35,
+   "stale": false
+  },
+  {
+   "id": "HL-AA-04",
+   "domains": [
+    "A&A"
+   ],
+   "keywords": "compliance verified standards regulations legal contractual statutory requirements",
+   "response": "Yes",
+   "text": "Compliance against SOC 2, PIPEDA, and applicable contractual security requirements is verified through the annual SOC 2 audit and quarterly internal control self-assessments. Contractual obligations from customer DPAs are mapped to controls in the GRC register and reviewed when agreements renew.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-09-30",
+   "evidence": [
+    "EV-SOC2-2026",
+    "EV-RISK-REGISTER"
+   ],
+   "age_days": 35,
+   "stale": false
+  },
+  {
+   "id": "HL-AA-05",
+   "domains": [
+    "A&A"
+   ],
+   "keywords": "audit management process audit planning risk analysis security control assessments conclusions remediation schedules report generation",
+   "response": "Yes",
+   "text": "The audit management process is defined in the Information Security Policy: annual audit planning, risk-based scoping, evidence collection with assigned owners, management review of findings, and tracked remediation. The CISO runs the cycle each year ahead of the SOC 2 fieldwork window.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-03-10",
+   "evidence": [
+    "EV-POLICY-INFOSEC"
+   ],
+   "age_days": 239,
+   "stale": true
+  },
+  {
+   "id": "HL-AIS-01",
+   "domains": [
+    "AIS"
+   ],
+   "keywords": "application security policies procedures SDLC secure development",
+   "response": "Yes",
+   "text": "The Application Security Policy (v3.0) defines secure development requirements for all Harbourline services: threat modeling for new features, mandatory code review, SAST in CI, and dependency scanning. It is reviewed annually by Security Engineering.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-02-15",
+   "evidence": [
+    "EV-POLICY-APPSEC"
+   ],
+   "age_days": 262,
+   "stale": true
+  },
+  {
+   "id": "HL-AIS-02",
+   "domains": [
+    "AIS"
+   ],
+   "keywords": "SDLC process application design development deployment operation security requirements",
+   "response": "Yes",
+   "text": "Harbourline follows a defined SDLC: design review with security sign-off, branch-protected GitHub repos, CI checks (SAST, SCA, secret scanning), staged deployment through GitHub Actions, and production change approval. The process is documented in the engineering handbook.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-06-01",
+   "evidence": [
+    "EV-POLICY-APPSEC",
+    "EV-POLICY-CHANGE"
+   ],
+   "age_days": 156,
+   "stale": false
+  },
+  {
+   "id": "HL-AIS-03",
+   "domains": [
+    "AIS"
+   ],
+   "keywords": "baseline requirements secure applications established documented maintained",
+   "response": "Yes",
+   "text": "Baseline security requirements for applications (authentication, session management, input validation, logging, cryptography) are documented in the AppSec baseline standard. New services must meet the baseline before launch, verified by a pre-launch security checklist.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-02-15",
+   "evidence": [
+    "EV-POLICY-APPSEC"
+   ],
+   "age_days": 262,
+   "stale": true
+  },
+  {
+   "id": "HL-AIS-04",
+   "domains": [
+    "AIS"
+   ],
+   "keywords": "testing strategy acceptance criteria new systems upgrades automated testing",
+   "response": "Yes",
+   "text": "Release acceptance criteria require green CI (unit/integration tests), SAST and dependency scans with no critical findings, and QA sign-off. Automated test suites run on every pull request via GitHub Actions; penetration testing is performed annually by an external firm.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-09-02",
+   "evidence": [
+    "EV-PENTEST-2026"
+   ],
+   "age_days": 63,
+   "stale": false
+  },
+  {
+   "id": "HL-AIS-05",
+   "domains": [
+    "AIS"
+   ],
+   "keywords": "deployment integration application code automated secure deployment CI/CD",
+   "response": "Yes",
+   "text": "All application deployments are automated through GitHub Actions pipelines with signed artifacts, staged rollouts, and automated rollback on health-check failure. Manual production deploys are not permitted.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-06-01",
+   "evidence": [
+    "EV-POLICY-CHANGE"
+   ],
+   "age_days": 156,
+   "stale": false
+  },
+  {
+   "id": "HL-AIS-06",
+   "domains": [
+    "AIS"
+   ],
+   "keywords": "application security vulnerabilities remediated defined processes SLA",
+   "response": "Yes",
+   "text": "Vulnerabilities are triaged by severity with defined SLAs: critical within 15 days, high within 30 days, tracked in the security backlog. Remediation of critical/high findings is verified by re-scan before closure. The 2026 penetration test findings were all remediated within SLA.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-09-02",
+   "evidence": [
+    "EV-PENTEST-2026",
+    "EV-VULNSCAN-Q3"
+   ],
+   "age_days": 63,
+   "stale": false
+  },
+  {
+   "id": "HL-BCR-01",
+   "domains": [
+    "BCR"
+   ],
+   "keywords": "business continuity operational resilience policies procedures",
+   "response": "Yes",
+   "text": "The Business Continuity Policy (v2.0) covers continuity and operational resilience for the SaaS platform and corporate operations, with defined roles, RTO/RPO targets per service tier, and annual review by IT Operations.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-01-20",
+   "evidence": [
+    "EV-POLICY-BCP"
+   ],
+   "age_days": 288,
+   "stale": true
+  },
+  {
+   "id": "HL-BCR-02",
+   "domains": [
+    "BCR"
+   ],
+   "keywords": "business continuity strategies reduce impact withstand recover disruption",
+   "response": "Yes",
+   "text": "Continuity strategies include multi-AZ deployment on AWS, automated failover for the primary database, and a documented degraded-mode runbook. Strategies are reviewed after each test or real incident.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-05-22",
+   "evidence": [
+    "EV-BCP-TEST-2026"
+   ],
+   "age_days": 166,
+   "stale": false
+  },
+  {
+   "id": "HL-BCR-03",
+   "domains": [
+    "BCR"
+   ],
+   "keywords": "business continuity plans exercised tested annually disaster response plan",
+   "response": "Yes",
+   "text": "The business continuity and disaster response plans are exercised at least annually. The most recent test (2026-05-22) covered a simulated regional AWS impairment with database failover; all RTO targets were met and lessons learned were actioned.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-05-22",
+   "evidence": [
+    "EV-BCP-TEST-2026"
+   ],
+   "age_days": 166,
+   "stale": false
+  },
+  {
+   "id": "HL-BCR-04",
+   "domains": [
+    "BCR"
+   ],
+   "keywords": "cloud data periodically backed up confidentiality integrity availability backup",
+   "response": "Yes",
+   "text": "Customer data in RDS and S3 is backed up automatically with point-in-time recovery (35-day retention for databases, versioned S3 with 90-day retention). Backups are encrypted with the same KMS keys as production and access is restricted to the platform team.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-10-01",
+   "evidence": [
+    "EV-BACKUP-RESTORE"
+   ],
+   "age_days": 34,
+   "stale": false
+  },
+  {
+   "id": "HL-BCR-05",
+   "domains": [
+    "BCR"
+   ],
+   "keywords": "backups restored appropriately resiliency restore test",
+   "response": "Yes",
+   "text": "Backup restores are tested monthly: a database snapshot is restored to an isolated environment and integrity-checked. The October 2026 test restored successfully within the 4-hour RTO.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-10-01",
+   "evidence": [
+    "EV-BACKUP-RESTORE"
+   ],
+   "age_days": 34,
+   "stale": false
+  },
+  {
+   "id": "HL-BCR-06",
+   "domains": [
+    "BCR"
+   ],
+   "keywords": "disaster response plan established documented approved applied evaluated maintained updated",
+   "response": "Yes",
+   "text": "The disaster response plan is documented, approved by the CISO, and maintained by IT Operations. It is updated at least annually and after any significant infrastructure change, most recently following the May 2026 exercise.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-05-22",
+   "evidence": [
+    "EV-BCP-TEST-2026",
+    "EV-POLICY-BCP"
+   ],
+   "age_days": 166,
+   "stale": false
+  },
+  {
+   "id": "HL-BCR-07",
+   "domains": [
+    "BCR"
+   ],
+   "keywords": "local emergency authorities included exercise",
+   "response": "No",
+   "text": "The annual continuity exercise is a tabletop plus technical failover test run internally; local emergency authorities are not included because Harbourline operates a single Toronto office and a cloud-only platform with no physical facilities under its control.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-05-22",
+   "evidence": [
+    "EV-BCP-TEST-2026"
+   ],
+   "age_days": 166,
+   "stale": false
+  },
+  {
+   "id": "HL-CCC-01",
+   "domains": [
+    "CCC"
+   ],
+   "keywords": "change control approval testing process baselines risk management changing assets",
+   "response": "Yes",
+   "text": "All production changes go through the change management process: pull-request review, CI checks, and approval by a code owner; database migrations require DBA review. Emergency changes follow a documented break-glass path with retrospective approval within 24 hours.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-04-05",
+   "evidence": [
+    "EV-POLICY-CHANGE"
+   ],
+   "age_days": 213,
+   "stale": true
+  },
+  {
+   "id": "HL-CCC-02",
+   "domains": [
+    "CCC"
+   ],
+   "keywords": "unauthorized addition removal update management assets restricted change baselines",
+   "response": "Yes",
+   "text": "Production asset changes are restricted to the deployment pipeline \u2014 direct console/SSH access to production is disabled. Infrastructure is defined in Terraform; drift is detected by a nightly plan check and unauthorized changes are reverted.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-09-01",
+   "evidence": [
+    "EV-POLICY-CHANGE"
+   ],
+   "age_days": 64,
+   "stale": false
+  },
+  {
+   "id": "HL-CCC-03",
+   "domains": [
+    "CCC"
+   ],
+   "keywords": "roll back changes previously known good state rollback",
+   "response": "Yes",
+   "text": "Every deployment supports automated rollback: container images are immutable and tagged, database migrations are reversible, and Terraform state is versioned. Rollback was exercised successfully during the May continuity test.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-05-22",
+   "evidence": [
+    "EV-POLICY-CHANGE",
+    "EV-BCP-TEST-2026"
+   ],
+   "age_days": 166,
+   "stale": false
+  },
+  {
+   "id": "HL-CCC-04",
+   "domains": [
+    "CCC"
+   ],
+   "keywords": "exceptions emergencies change configuration management procedure exception process",
+   "response": "Yes",
+   "text": "Emergency changes use the break-glass procedure: implement first with on-call approval, document in the change log, and obtain retrospective approval within 24 hours. Emergency changes are reviewed in the weekly engineering review.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-04-05",
+   "evidence": [
+    "EV-POLICY-CHANGE"
+   ],
+   "age_days": 213,
+   "stale": true
+  },
+  {
+   "id": "HL-CCC-05",
+   "domains": [
+    "CCC"
+   ],
+   "keywords": "detection measures proactive notification changes deviate established baselines drift",
+   "response": "Yes",
+   "text": "Configuration drift is detected by nightly Terraform plan runs and Datadog monitors on critical infrastructure settings; deviations page the on-call engineer. CloudTrail-equivalent audit logs capture all control-plane changes.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-10-20",
+   "evidence": [
+    "EV-DATADOG-LOGS"
+   ],
+   "age_days": 15,
+   "stale": false
+  },
+  {
+   "id": "HL-CEK-01",
+   "domains": [
+    "CEK"
+   ],
+   "keywords": "cryptography encryption key management policies procedures roles responsibilities",
+   "response": "Yes",
+   "text": "Cryptography and key management requirements are defined in the Information Security Policy and the AppSec baseline: approved algorithms, KMS usage, and role assignments. The Security Engineer owns the key management program; the CISO approves exceptions.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-03-10",
+   "evidence": [
+    "EV-POLICY-INFOSEC",
+    "EV-CRYPTO-INVENTORY"
+   ],
+   "age_days": 239,
+   "stale": true
+  },
+  {
+   "id": "HL-CEK-02",
+   "domains": [
+    "CEK"
+   ],
+   "keywords": "data at-rest in-transit cryptographically protected certified libraries KMS AES TLS",
+   "response": "Yes",
+   "text": "Data at rest is encrypted with AES-256 via AWS KMS; data in transit uses TLS 1.2+ for all external and inter-service traffic. Cryptographic operations use AWS-maintained libraries (FIPS 140-2 validated modules where applicable).",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-09-15",
+   "evidence": [
+    "EV-CRYPTO-INVENTORY",
+    "EV-PENTEST-2026"
+   ],
+   "age_days": 50,
+   "stale": false
+  },
+  {
+   "id": "HL-CEK-03",
+   "domains": [
+    "CEK"
+   ],
+   "keywords": "encryption algorithms data classification appropriate",
+   "response": "Yes",
+   "text": "AES-256-GCM is the standard for data at rest and TLS 1.2+ with strong cipher suites for data in transit, applied uniformly including to data classified as confidential or restricted in the data classification scheme.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-09-15",
+   "evidence": [
+    "EV-CRYPTO-INVENTORY"
+   ],
+   "age_days": 50,
+   "stale": false
+  },
+  {
+   "id": "HL-CEK-04",
+   "domains": [
+    "CEK"
+   ],
+   "keywords": "cryptographic keys generated industry accepted approved libraries randomness",
+   "response": "Yes",
+   "text": "Keys are generated by AWS KMS using FIPS 140-2 validated hardware security modules; application-level secrets are generated with cryptographically secure random number generators. No customer code implements its own key generation.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-09-15",
+   "evidence": [
+    "EV-CRYPTO-INVENTORY"
+   ],
+   "age_days": 50,
+   "stale": false
+  },
+  {
+   "id": "HL-CEK-05",
+   "domains": [
+    "CEK"
+   ],
+   "keywords": "cryptographic keys rotated cryptoperiod",
+   "response": "Yes",
+   "text": "KMS data keys rotate automatically on the AWS-managed schedule; service credentials and API tokens rotate at least annually and on employee departure. Rotation events are logged and reviewed quarterly.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-10-10",
+   "evidence": [
+    "EV-CRYPTO-INVENTORY",
+    "EV-ACCESS-REVIEW-Q3"
+   ],
+   "age_days": 25,
+   "stale": false
+  },
+  {
+   "id": "HL-CEK-06",
+   "domains": [
+    "CEK"
+   ],
+   "keywords": "keys revoked removed cryptoperiod compromised key revocation",
+   "response": "Yes",
+   "text": "Compromised or departing-employee-associated keys are revoked immediately via KMS disable/delete scheduling and Okta deprovisioning. Revocation is verified in the quarterly access review.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-10-10",
+   "evidence": [
+    "EV-ACCESS-REVIEW-Q3"
+   ],
+   "age_days": 25,
+   "stale": false
+  },
+  {
+   "id": "HL-CEK-07",
+   "domains": [
+    "CEK"
+   ],
+   "keywords": "processes procedures technical measures destroy unneeded keys secure deletion",
+   "response": "Yes",
+   "text": "Unneeded KMS keys are scheduled for deletion with the minimum 7-day waiting period after confirming no encrypted data depends on them; application secrets are rotated then purged from the secrets manager.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-09-15",
+   "evidence": [
+    "EV-CRYPTO-INVENTORY"
+   ],
+   "age_days": 50,
+   "stale": false
+  },
+  {
+   "id": "HL-CEK-08",
+   "domains": [
+    "CEK"
+   ],
+   "keywords": "capacity manage own data encryption keys customer managed keys BYOK",
+   "response": "No",
+   "text": "Harbourline does not currently offer customer-managed (BYOK) encryption keys; all tenant data is encrypted under Harbourline-managed KMS keys with per-tenant key separation. BYOK is on the roadmap for enterprise tiers.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-08-01",
+   "evidence": [
+    "EV-POLICY-DATA"
+   ],
+   "age_days": 95,
+   "stale": false
+  },
+  {
+   "id": "HL-DCS-01",
+   "domains": [
+    "DCS"
+   ],
+   "keywords": "datacenter physical security shared responsibility AWS inherited controls",
+   "response": "Yes",
+   "text": "Harbourline operates no datacenters of its own; all infrastructure runs on AWS (ca-central-1). Physical security, environmental controls, and media handling for the underlying facilities are inherited from AWS and covered by AWS's SOC 2 report, which we review annually.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-04-01",
+   "evidence": [
+    "EV-AWS-SOC2",
+    "EV-AWS-CAIQ"
+   ],
+   "age_days": 217,
+   "stale": true
+  },
+  {
+   "id": "HL-DCS-02",
+   "domains": [
+    "DCS"
+   ],
+   "keywords": "secure disposal equipment media destruction data destruction",
+   "response": "Yes",
+   "text": "End-of-life laptops and drives are wiped with certified erasure software or physically destroyed by a contracted ITAD vendor with certificates of destruction. Cloud storage media sanitization is inherited from AWS.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-06-01",
+   "evidence": [
+    "EV-JAMF-COMPLIANCE"
+   ],
+   "age_days": 156,
+   "stale": false
+  },
+  {
+   "id": "HL-DCS-03",
+   "domains": [
+    "DCS"
+   ],
+   "keywords": "physical security perimeters authorized personnel secure areas access",
+   "response": "Yes",
+   "text": "The Toronto office uses badge access with visitor logging; server rooms are not applicable (cloud-only). AWS facility perimeters and access controls are inherited and attested in the AWS SOC 2 report.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2025-11-15",
+   "evidence": [
+    "EV-AWS-SOC2"
+   ],
+   "age_days": 354,
+   "stale": true
+  },
+  {
+   "id": "HL-DCS-04",
+   "domains": [
+    "DCS"
+   ],
+   "keywords": "environmental control systems utility services datacenter",
+   "response": "Yes",
+   "text": "Not applicable to Harbourline-operated facilities \u2014 environmental and utility controls for compute facilities are provided and attested by AWS under the shared responsibility model.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-04-01",
+   "evidence": [
+    "EV-AWS-SOC2"
+   ],
+   "age_days": 217,
+   "stale": true
+  },
+  {
+   "id": "HL-DCS-05",
+   "domains": [
+    "DCS"
+   ],
+   "keywords": "asset catalog tracked physical logical assets",
+   "response": "Yes",
+   "text": "All corporate assets (laptops, monitors, mobile devices) are cataloged in Jamf Pro and the IT asset register; cloud assets are inventoried via AWS Config. The inventory is reconciled quarterly.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-11-01",
+   "evidence": [
+    "EV-JAMF-COMPLIANCE"
+   ],
+   "age_days": 3,
+   "stale": false
+  },
+  {
+   "id": "HL-DCS-06",
+   "domains": [
+    "DCS"
+   ],
+   "keywords": "surveillance datacenter personnel trained unauthorized access",
+   "response": "Yes",
+   "text": "Office entry points have badge readers with audit logs reviewed on incident; AWS datacenter surveillance and personnel controls are inherited under the shared responsibility model.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2025-11-15",
+   "evidence": [
+    "EV-AWS-SOC2"
+   ],
+   "age_days": 354,
+   "stale": true
+  },
+  {
+   "id": "HL-DSP-01",
+   "domains": [
+    "DSP"
+   ],
+   "keywords": "data security privacy policies procedures established documented approved communicated enforced evaluated maintained",
+   "response": "Yes",
+   "text": "The Data Protection and Privacy Policy (v2.1) governs the full data lifecycle \u2014 collection, use, retention, and deletion \u2014 for customer and personal data. It is approved by Privacy Counsel, communicated at onboarding, and reviewed annually.",
+   "owner": "Marcus Webb",
+   "owner_title": "Privacy Counsel",
+   "last_reviewed": "2026-03-10",
+   "evidence": [
+    "EV-POLICY-DATA"
+   ],
+   "age_days": 239,
+   "stale": true
+  },
+  {
+   "id": "HL-DSP-02",
+   "domains": [
+    "DSP"
+   ],
+   "keywords": "data inventory sensitive personal information created maintained",
+   "response": "Yes",
+   "text": "A data inventory catalogs personal and sensitive data stores (application databases, analytics warehouse, support tooling) with data types, locations, and retention periods. It is maintained by Privacy Counsel and reviewed annually.",
+   "owner": "Marcus Webb",
+   "owner_title": "Privacy Counsel",
+   "last_reviewed": "2026-07-15",
+   "evidence": [
+    "EV-DATAFLOW"
+   ],
+   "age_days": 112,
+   "stale": false
+  },
+  {
+   "id": "HL-DSP-03",
+   "domains": [
+    "DSP"
+   ],
+   "keywords": "data classified type sensitivity levels classification scheme",
+   "response": "Yes",
+   "text": "Data is classified as Public, Internal, Confidential, or Restricted per the classification scheme in the Data Protection Policy. Customer production data defaults to Confidential; credentials and keys are Restricted.",
+   "owner": "Marcus Webb",
+   "owner_title": "Privacy Counsel",
+   "last_reviewed": "2026-03-10",
+   "evidence": [
+    "EV-POLICY-DATA"
+   ],
+   "age_days": 239,
+   "stale": true
+  },
+  {
+   "id": "HL-DSP-04",
+   "domains": [
+    "DSP"
+   ],
+   "keywords": "data flow documentation created identify processed stored transmitted reviewed",
+   "response": "Yes",
+   "text": "Data flow diagrams document what customer data is processed, where it is stored, and which subprocessors are involved. They are reviewed at least annually and after material architecture changes; last review 2026-07-15.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-07-15",
+   "evidence": [
+    "EV-DATAFLOW"
+   ],
+   "age_days": 112,
+   "stale": false
+  },
+  {
+   "id": "HL-DSP-05",
+   "domains": [
+    "DSP"
+   ],
+   "keywords": "data protection impact assessment DPIA conducted personal data",
+   "response": "Yes",
+   "text": "DPIAs are conducted for new processing of personal data and material changes. The 2026 DPIA for the analytics pipeline v2 covered lawful basis, data minimization, retention, and subprocessor review, with all actions closed.",
+   "owner": "Marcus Webb",
+   "owner_title": "Privacy Counsel",
+   "last_reviewed": "2026-08-01",
+   "evidence": [
+    "EV-DPIA-2026"
+   ],
+   "age_days": 95,
+   "stale": false
+  },
+  {
+   "id": "HL-DSP-06",
+   "domains": [
+    "DSP"
+   ],
+   "keywords": "data retention archiving deletion practices business requirements legal",
+   "response": "Yes",
+   "text": "Retention schedules are defined per data category (e.g., customer data retained for the contract term plus 90 days, logs 13 months) and enforced by automated lifecycle rules. Deletion requests are actioned within 30 days.",
+   "owner": "Marcus Webb",
+   "owner_title": "Privacy Counsel",
+   "last_reviewed": "2026-03-10",
+   "evidence": [
+    "EV-POLICY-DATA"
+   ],
+   "age_days": 239,
+   "stale": true
+  },
+  {
+   "id": "HL-DSP-07",
+   "domains": [
+    "DSP"
+   ],
+   "keywords": "manage respond requests data subjects DSR procedure rights",
+   "response": "Yes",
+   "text": "Data subject requests (access, correction, deletion, portability) are handled through a documented DSR procedure owned by Privacy Counsel, with a 30-day response SLA. Three requests were processed in 2026, all within SLA.",
+   "owner": "Marcus Webb",
+   "owner_title": "Privacy Counsel",
+   "last_reviewed": "2026-09-01",
+   "evidence": [
+    "EV-POLICY-DATA"
+   ],
+   "age_days": 64,
+   "stale": false
+  },
+  {
+   "id": "HL-DSP-08",
+   "domains": [
+    "DSP"
+   ],
+   "keywords": "secure data disposal storage media information irretrievable",
+   "response": "Yes",
+   "text": "Electronic media is sanitized per media type before disposal or reuse; paper containing personal data is cross-shredded. Cloud media sanitization is inherited from AWS; corporate devices go through the ITAD process with certificates of destruction.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-06-01",
+   "evidence": [
+    "EV-JAMF-COMPLIANCE",
+    "EV-AWS-SOC2"
+   ],
+   "age_days": 156,
+   "stale": false
+  },
+  {
+   "id": "HL-GRC-01",
+   "domains": [
+    "GRC"
+   ],
+   "keywords": "information governance program policies procedures sponsored leadership",
+   "response": "Yes",
+   "text": "The information governance program is sponsored by the CEO and run by the CISO, covering all CCM-relevant domains. Program status is reported to leadership quarterly and the policy set is reviewed annually.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-03-10",
+   "evidence": [
+    "EV-POLICY-INFOSEC",
+    "EV-RISK-REGISTER"
+   ],
+   "age_days": 239,
+   "stale": true
+  },
+  {
+   "id": "HL-GRC-02",
+   "domains": [
+    "GRC"
+   ],
+   "keywords": "enterprise risk management formal documented leadership sponsored",
+   "response": "Yes",
+   "text": "A formal risk management program is documented in the Information Security Policy: risks are identified, assessed, and tracked in a quarterly-reviewed risk register with assigned owners and treatment plans.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-09-30",
+   "evidence": [
+    "EV-RISK-REGISTER"
+   ],
+   "age_days": 35,
+   "stale": false
+  },
+  {
+   "id": "HL-GRC-03",
+   "domains": [
+    "GRC"
+   ],
+   "keywords": "exception process approved governance policy exception risk acceptance",
+   "response": "Yes",
+   "text": "Policy exceptions require a documented risk acceptance signed by the CISO with compensating controls and an expiry date (max 12 months). Exceptions are tracked in the GRC register and re-evaluated at expiry.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-03-10",
+   "evidence": [
+    "EV-POLICY-INFOSEC",
+    "EV-RISK-REGISTER"
+   ],
+   "age_days": 239,
+   "stale": true
+  },
+  {
+   "id": "HL-GRC-04",
+   "domains": [
+    "GRC"
+   ],
+   "keywords": "standards regulations legal contractual statutory requirements identified",
+   "response": "Yes",
+   "text": "Applicable requirements (SOC 2, PIPEDA, customer contractual security clauses) are identified in the compliance register and mapped to controls. New regulations are assessed by Privacy Counsel and the CISO as they emerge.",
+   "owner": "Marcus Webb",
+   "owner_title": "Privacy Counsel",
+   "last_reviewed": "2026-09-30",
+   "evidence": [
+    "EV-SOC2-2026",
+    "EV-RISK-REGISTER"
+   ],
+   "age_days": 35,
+   "stale": false
+  },
+  {
+   "id": "HL-HRS-01",
+   "domains": [
+    "HRS"
+   ],
+   "keywords": "background verification new employees policies procedures local laws",
+   "response": "Yes",
+   "text": "Background verification (identity, employment history, education; criminal check where permitted by Ontario law) is completed for all new hires before their start date, administered through a third-party provider.",
+   "owner": "Aisha Bello",
+   "owner_title": "HR Manager",
+   "last_reviewed": "2026-01-15",
+   "evidence": [
+    "EV-TRAINING-2026"
+   ],
+   "age_days": 293,
+   "stale": true
+  },
+  {
+   "id": "HL-HRS-02",
+   "domains": [
+    "HRS"
+   ],
+   "keywords": "acceptable use organizationally owned assets allowances conditions",
+   "response": "Yes",
+   "text": "The Acceptable Use Policy defines permitted use of company devices, data, and networks, including prohibitions on unauthorized software and data exfiltration. All employees acknowledge it at onboarding.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2025-12-01",
+   "evidence": [
+    "EV-POLICY-REMOTE"
+   ],
+   "age_days": 338,
+   "stale": true
+  },
+  {
+   "id": "HL-HRS-03",
+   "domains": [
+    "HRS"
+   ],
+   "keywords": "unattended workspaces conceal confidential data clean desk screen lock",
+   "response": "Yes",
+   "text": "The clean-desk and clear-screen policy requires locking devices when unattended (auto-lock enforced via Jamf at 5 minutes) and securing confidential documents. It is covered in onboarding and annual training.",
+   "owner": "Aisha Bello",
+   "owner_title": "HR Manager",
+   "last_reviewed": "2026-10-25",
+   "evidence": [
+    "EV-TRAINING-2026",
+    "EV-JAMF-COMPLIANCE"
+   ],
+   "age_days": 10,
+   "stale": false
+  },
+  {
+   "id": "HL-HRS-04",
+   "domains": [
+    "HRS"
+   ],
+   "keywords": "protect information accessed processed stored remote sites telework",
+   "response": "Yes",
+   "text": "Remote work requirements (encrypted devices, VPN for admin access, no public Wi-Fi without VPN, physical security of devices) are defined in the Remote Work Policy and enforced through Jamf and Okta device trust.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2025-12-01",
+   "evidence": [
+    "EV-POLICY-REMOTE",
+    "EV-JAMF-COMPLIANCE"
+   ],
+   "age_days": 338,
+   "stale": true
+  },
+  {
+   "id": "HL-HRS-05",
+   "domains": [
+    "HRS"
+   ],
+   "keywords": "return procedures organizationally owned assets terminated employees offboarding",
+   "response": "Yes",
+   "text": "Offboarding revokes all access within 24 hours of termination via the Okta-integrated checklist, and company assets must be returned within 5 business days. Asset return is tracked in the IT ticket system.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-10-10",
+   "evidence": [
+    "EV-ACCESS-REVIEW-Q3"
+   ],
+   "age_days": 25,
+   "stale": false
+  },
+  {
+   "id": "HL-HRS-06",
+   "domains": [
+    "HRS"
+   ],
+   "keywords": "employment agreement signed access organizational assets NDA confidentiality",
+   "response": "Yes",
+   "text": "Every employee signs an employment agreement with confidentiality and IP assignment clauses before receiving system access. Contractors sign equivalent agreements through the contracting process.",
+   "owner": "Aisha Bello",
+   "owner_title": "HR Manager",
+   "last_reviewed": "2026-01-15",
+   "evidence": [
+    "EV-TRAINING-2026"
+   ],
+   "age_days": 293,
+   "stale": true
+  },
+  {
+   "id": "HL-HRS-07",
+   "domains": [
+    "HRS"
+   ],
+   "keywords": "security awareness training program established documented regular updates phishing",
+   "response": "Yes",
+   "text": "All employees complete security awareness training at onboarding and annually, plus quarterly phishing simulations. Completion is tracked; the 2026 cycle reached 100% completion and phishing click-through fell to 4%.",
+   "owner": "Aisha Bello",
+   "owner_title": "HR Manager",
+   "last_reviewed": "2026-10-25",
+   "evidence": [
+    "EV-TRAINING-2026"
+   ],
+   "age_days": 10,
+   "stale": false
+  },
+  {
+   "id": "HL-IAM-01",
+   "domains": [
+    "IAM"
+   ],
+   "keywords": "identity access management policies procedures established documented approved",
+   "response": "Yes",
+   "text": "Identity and access management requirements are defined in the Information Security Policy: centralized identity via Okta, role-based access, and quarterly access reviews. The policy is reviewed annually.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-03-10",
+   "evidence": [
+    "EV-POLICY-INFOSEC"
+   ],
+   "age_days": 239,
+   "stale": true
+  },
+  {
+   "id": "HL-IAM-02",
+   "domains": [
+    "IAM"
+   ],
+   "keywords": "strong password policies procedures MFA multi-factor authentication",
+   "response": "Yes",
+   "text": "Passwords must meet complexity and length requirements enforced by Okta; MFA is mandatory for all users on all applications, using authenticator apps or hardware keys. Passwordless options are being piloted for engineering.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-10-10",
+   "evidence": [
+    "EV-ACCESS-REVIEW-Q3"
+   ],
+   "age_days": 25,
+   "stale": false
+  },
+  {
+   "id": "HL-IAM-03",
+   "domains": [
+    "IAM"
+   ],
+   "keywords": "user access provisioning process authorizes records communicates",
+   "response": "Yes",
+   "text": "Access provisioning follows a documented joiner process: HR triggers Okta onboarding, managers approve role-based app assignments, and every grant is logged. Privileged access requires CISO or delegate approval.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-10-10",
+   "evidence": [
+    "EV-ACCESS-REVIEW-Q3"
+   ],
+   "age_days": 25,
+   "stale": false
+  },
+  {
+   "id": "HL-IAM-04",
+   "domains": [
+    "IAM"
+   ],
+   "keywords": "de-provision modify access timely manner movers leavers termination",
+   "response": "Yes",
+   "text": "Access is deprovisioned automatically via Okta lifecycle management: HRIS termination triggers revocation of all SSO sessions and app access within 24 hours; shared credentials are rotated immediately.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-10-10",
+   "evidence": [
+    "EV-ACCESS-REVIEW-Q3"
+   ],
+   "age_days": 25,
+   "stale": false
+  },
+  {
+   "id": "HL-IAM-05",
+   "domains": [
+    "IAM"
+   ],
+   "keywords": "reviews revalidation user access least privilege separation duties quarterly",
+   "response": "Yes",
+   "text": "User access is reviewed quarterly by application owners against least-privilege and separation-of-duties rules; the Q3 2026 review covered all production systems and resulted in 14 access removals.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-10-10",
+   "evidence": [
+    "EV-ACCESS-REVIEW-Q3"
+   ],
+   "age_days": 25,
+   "stale": false
+  },
+  {
+   "id": "HL-IAM-06",
+   "domains": [
+    "IAM"
+   ],
+   "keywords": "privileged access roles segregation granted managed break glass",
+   "response": "Yes",
+   "text": "Privileged access is segregated from standard accounts: administrators use separate privileged accounts with MFA, session recording for production access, and just-in-time elevation for break-glass scenarios.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-10-10",
+   "evidence": [
+    "EV-ACCESS-REVIEW-Q3"
+   ],
+   "age_days": 25,
+   "stale": false
+  },
+  {
+   "id": "HL-IAM-07",
+   "domains": [
+    "IAM"
+   ],
+   "keywords": "least privilege principle separation duties employed access",
+   "response": "Yes",
+   "text": "Least privilege is enforced through role-based access profiles in Okta and AWS IAM; separation of duties is applied to financial and deployment approvals (e.g., the person deploying cannot approve their own change).",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-06-01",
+   "evidence": [
+    "EV-POLICY-CHANGE"
+   ],
+   "age_days": 156,
+   "stale": false
+  },
+  {
+   "id": "HL-IAM-08",
+   "domains": [
+    "IAM"
+   ],
+   "keywords": "authenticate access systems applications digital certificates system identities",
+   "response": "Yes",
+   "text": "Human access to systems requires SSO with MFA; service-to-service authentication uses short-lived tokens and mutual TLS with certificates managed by AWS ACM. Shared service accounts are prohibited for human use.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-09-15",
+   "evidence": [
+    "EV-CRYPTO-INVENTORY"
+   ],
+   "age_days": 50,
+   "stale": false
+  },
+  {
+   "id": "HL-IPY-01",
+   "domains": [
+    "IPY"
+   ],
+   "keywords": "programmatically retrieve data application interface export portability",
+   "response": "Yes",
+   "text": "Customers can export their data at any time via the REST API and CSV export in the product UI. Export formats are documented in the developer docs.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-07-01",
+   "evidence": [
+    "EV-POLICY-DATA"
+   ],
+   "age_days": 126,
+   "stale": false
+  },
+  {
+   "id": "HL-IPY-02",
+   "domains": [
+    "IPY"
+   ],
+   "keywords": "cryptographically secure standardized network protocols management migration",
+   "response": "Yes",
+   "text": "All management and data interfaces use TLS 1.2+ with standard protocols (HTTPS REST APIs); legacy or insecure protocols are disabled at the load balancer.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-09-15",
+   "evidence": [
+    "EV-CRYPTO-INVENTORY"
+   ],
+   "age_days": 50,
+   "stale": false
+  },
+  {
+   "id": "HL-IPY-03",
+   "domains": [
+    "IPY"
+   ],
+   "keywords": "agreements provisions data access contract termination",
+   "response": "Yes",
+   "text": "Customer agreements include a 90-day post-termination data retrieval window and assisted export on request, after which data is deleted per the retention schedule.",
+   "owner": "Marcus Webb",
+   "owner_title": "Privacy Counsel",
+   "last_reviewed": "2026-09-01",
+   "evidence": [
+    "EV-POLICY-DATA",
+    "EV-SUBPROCESSORS"
+   ],
+   "age_days": 64,
+   "stale": false
+  },
+  {
+   "id": "HL-IVS-01",
+   "domains": [
+    "IVS"
+   ],
+   "keywords": "infrastructure virtualization security policies procedures network segmentation",
+   "response": "Yes",
+   "text": "Infrastructure security requirements (VPC design, security groups, network segmentation) are defined in the infrastructure baseline. Production, staging, and development run in separate AWS accounts with no cross-account trust except the deployment pipeline.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-06-01",
+   "evidence": [
+    "EV-POLICY-INFOSEC"
+   ],
+   "age_days": 156,
+   "stale": false
+  },
+  {
+   "id": "HL-IVS-02",
+   "domains": [
+    "IVS"
+   ],
+   "keywords": "communications environments monitored encrypted authenticated authorized",
+   "response": "Yes",
+   "text": "Inter-service traffic is encrypted with mutual TLS; VPC flow logs and security group change logs are collected centrally. Network configurations are reviewed annually and on architecture change.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-10-20",
+   "evidence": [
+    "EV-DATADOG-LOGS"
+   ],
+   "age_days": 15,
+   "stale": false
+  },
+  {
+   "id": "HL-IVS-03",
+   "domains": [
+    "IVS"
+   ],
+   "keywords": "host guest OS hypervisor hardened according baselines",
+   "response": "Yes",
+   "text": "Container base images are minimal and scanned; EC2-equivalent hosts are AWS-managed (Fargate/RDS) so hypervisor hardening is inherited from AWS. CIS-benchmark-aligned hardening is applied to the images we build.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-09-01",
+   "evidence": [
+    "EV-VULNSCAN-Q3",
+    "EV-AWS-SOC2"
+   ],
+   "age_days": 64,
+   "stale": false
+  },
+  {
+   "id": "HL-IVS-04",
+   "domains": [
+    "IVS"
+   ],
+   "keywords": "production non-production environments separated",
+   "response": "Yes",
+   "text": "Production and non-production environments are fully separated: distinct AWS accounts, networks, data, and access roles. Production data is never used in lower environments; staging uses synthetic data.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-06-01",
+   "evidence": [
+    "EV-POLICY-INFOSEC"
+   ],
+   "age_days": 156,
+   "stale": false
+  },
+  {
+   "id": "HL-IVS-05",
+   "domains": [
+    "IVS"
+   ],
+   "keywords": "secure encrypted communication channels up-to-date approved protocols",
+   "response": "Yes",
+   "text": "Only TLS 1.2+ with approved cipher suites is permitted for service communication; deprecated protocols are blocked at the load balancer and verified by quarterly external scans.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-09-02",
+   "evidence": [
+    "EV-PENTEST-2026"
+   ],
+   "age_days": 63,
+   "stale": false
+  },
+  {
+   "id": "HL-LOG-01",
+   "domains": [
+    "LOG"
+   ],
+   "keywords": "logging monitoring policies procedures established documented approved",
+   "response": "Yes",
+   "text": "Logging and monitoring requirements are defined in the Information Security Policy: what is logged, centralized collection, 13-month retention, and restricted access. The policy is reviewed annually.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-03-10",
+   "evidence": [
+    "EV-POLICY-INFOSEC"
+   ],
+   "age_days": 239,
+   "stale": true
+  },
+  {
+   "id": "HL-LOG-02",
+   "domains": [
+    "LOG"
+   ],
+   "keywords": "security-related events identified monitored applications infrastructure alerts stakeholders",
+   "response": "Yes",
+   "text": "Security-relevant events (authentication failures, privilege escalation, WAF blocks, anomalous API usage) are monitored in Datadog with alerts routed to the on-call security engineer via PagerDuty.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-10-20",
+   "evidence": [
+    "EV-DATADOG-LOGS"
+   ],
+   "age_days": 15,
+   "stale": false
+  },
+  {
+   "id": "HL-LOG-03",
+   "domains": [
+    "LOG"
+   ],
+   "keywords": "access audit logs restricted authorized personnel records maintained",
+   "response": "Yes",
+   "text": "Audit logs are immutable (WORM S3 bucket) and access is restricted to the security and platform teams; every access to audit logs is itself logged.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-10-20",
+   "evidence": [
+    "EV-DATADOG-LOGS"
+   ],
+   "age_days": 15,
+   "stale": false
+  },
+  {
+   "id": "HL-LOG-04",
+   "domains": [
+    "LOG"
+   ],
+   "keywords": "reliable time source all relevant information processing systems NTP",
+   "response": "Yes",
+   "text": "All systems synchronize to AWS Time Sync Service (NTP) so log timestamps are consistent across the fleet; drift is monitored.",
+   "owner": "Sam Reyes",
+   "owner_title": "DevOps Lead",
+   "last_reviewed": "2026-10-20",
+   "evidence": [
+    "EV-DATADOG-LOGS"
+   ],
+   "age_days": 15,
+   "stale": false
+  },
+  {
+   "id": "HL-LOG-05",
+   "domains": [
+    "LOG"
+   ],
+   "keywords": "audit records generated contain relevant security information protect unauthorized access modification deletion",
+   "response": "Yes",
+   "text": "Audit records capture who, what, when, and where for security-relevant actions and are protected from modification via immutable storage with restricted write access.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-10-20",
+   "evidence": [
+    "EV-DATADOG-LOGS"
+   ],
+   "age_days": 15,
+   "stale": false
+  },
+  {
+   "id": "HL-LOG-06",
+   "domains": [
+    "LOG"
+   ],
+   "keywords": "key lifecycle management events logged monitored auditing reporting cryptographic",
+   "response": "Yes",
+   "text": "KMS key lifecycle events (creation, rotation, disable, deletion scheduling) are logged to CloudTrail and alerted to the security team.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-09-15",
+   "evidence": [
+    "EV-CRYPTO-INVENTORY"
+   ],
+   "age_days": 50,
+   "stale": false
+  },
+  {
+   "id": "HL-SEF-01",
+   "domains": [
+    "SEF"
+   ],
+   "keywords": "security incident management e-discovery cloud forensics policies procedures",
+   "response": "Yes",
+   "text": "The Incident Response Plan (v3.2) defines roles, severity levels, escalation paths, and forensics procedures including evidence preservation for cloud workloads. It is reviewed annually.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-07-01",
+   "evidence": [
+    "EV-IR-PLAN"
+   ],
+   "age_days": 126,
+   "stale": false
+  },
+  {
+   "id": "HL-SEF-02",
+   "domains": [
+    "SEF"
+   ],
+   "keywords": "security incident response plan tested updated effectiveness tabletop",
+   "response": "Yes",
+   "text": "The incident response plan is tested annually through a tabletop exercise; the June 2026 exercise simulated a credential-compromise scenario and produced four improvement actions, all closed.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-06-18",
+   "evidence": [
+    "EV-TABLETOP-2026"
+   ],
+   "age_days": 139,
+   "stale": false
+  },
+  {
+   "id": "HL-SEF-03",
+   "domains": [
+    "SEF"
+   ],
+   "keywords": "security breach notifications defined implemented reported authorities customers",
+   "response": "Yes",
+   "text": "Breach notification procedures define assessment, containment, and notification timelines aligned with PIPEDA and contractual obligations (customer notification without unreasonable delay). Contact lists for regulators and law enforcement are maintained in the IR plan.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-07-01",
+   "evidence": [
+    "EV-IR-PLAN"
+   ],
+   "age_days": 126,
+   "stale": false
+  },
+  {
+   "id": "HL-SEF-04",
+   "domains": [
+    "SEF"
+   ],
+   "keywords": "incident metrics established monitored triage",
+   "response": "Yes",
+   "text": "Incident metrics (time to detect, time to respond, incidents by severity) are tracked and reviewed monthly by the security team. In 2026 there were no Severity-1 incidents.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-10-20",
+   "evidence": [
+    "EV-DATADOG-LOGS"
+   ],
+   "age_days": 15,
+   "stale": false
+  },
+  {
+   "id": "HL-SEF-05",
+   "domains": [
+    "SEF"
+   ],
+   "keywords": "points of contact regulation authorities law enforcement maintained",
+   "response": "Yes",
+   "text": "Points of contact for the Privacy Commissioner of Canada, relevant US authorities for US customers, and Toronto law enforcement are maintained in the incident response plan and verified annually.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-07-01",
+   "evidence": [
+    "EV-IR-PLAN"
+   ],
+   "age_days": 126,
+   "stale": false
+  },
+  {
+   "id": "HL-STA-01",
+   "domains": [
+    "STA"
+   ],
+   "keywords": "shared security responsibility model SSRM applied documented supply chain",
+   "response": "Yes",
+   "text": "Harbourline documents its shared responsibility model: AWS secures the underlying cloud infrastructure; Harbourline secures its applications, data, and configurations. The model is published in the trust center and customer security documentation.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-04-01",
+   "evidence": [
+    "EV-AWS-SOC2"
+   ],
+   "age_days": 217,
+   "stale": true
+  },
+  {
+   "id": "HL-STA-02",
+   "domains": [
+    "STA"
+   ],
+   "keywords": "inventory supply chain relationships developed maintained subprocessors",
+   "response": "Yes",
+   "text": "An inventory of supply chain relationships and subprocessors (AWS, Okta, Datadog, GitHub, etc.) is maintained by Legal and published in the trust center; it is reviewed whenever a vendor is added or removed.",
+   "owner": "Marcus Webb",
+   "owner_title": "Privacy Counsel",
+   "last_reviewed": "2026-09-01",
+   "evidence": [
+    "EV-SUBPROCESSORS"
+   ],
+   "age_days": 64,
+   "stale": false
+  },
+  {
+   "id": "HL-STA-03",
+   "domains": [
+    "STA"
+   ],
+   "keywords": "risk factors supply chain periodically reviewed vendor assessments",
+   "response": "Yes",
+   "text": "Vendors with access to customer data undergo a risk assessment before onboarding and annually thereafter, covering SOC 2 reports, security questionnaires, and financial viability. Findings are tracked to closure.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-06-30",
+   "evidence": [
+    "EV-VENDOR-ASSESS"
+   ],
+   "age_days": 127,
+   "stale": false
+  },
+  {
+   "id": "HL-STA-04",
+   "domains": [
+    "STA"
+   ],
+   "keywords": "supply chain agreements reviewed annually security requirements",
+   "response": "Yes",
+   "text": "Vendor agreements include security and confidentiality requirements and are reviewed at least annually; DPAs are in place with all subprocessors processing personal data.",
+   "owner": "Marcus Webb",
+   "owner_title": "Privacy Counsel",
+   "last_reviewed": "2026-09-01",
+   "evidence": [
+    "EV-SUBPROCESSORS"
+   ],
+   "age_days": 64,
+   "stale": false
+  },
+  {
+   "id": "HL-STA-05",
+   "domains": [
+    "STA"
+   ],
+   "keywords": "periodic security assessments supply chain organizations defined",
+   "response": "Yes",
+   "text": "Critical suppliers are reassessed annually via their SOC 2 reports or a security questionnaire; the H1 2026 assessment pack covered all 12 in-scope vendors with no unresolved high risks.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-06-30",
+   "evidence": [
+    "EV-VENDOR-ASSESS"
+   ],
+   "age_days": 127,
+   "stale": false
+  },
+  {
+   "id": "HL-TVM-01",
+   "domains": [
+    "TVM"
+   ],
+   "keywords": "threat vulnerability management policies procedures established documented approved",
+   "response": "Yes",
+   "text": "Threat and vulnerability management is defined in the Information Security Policy: continuous scanning, risk-based prioritization, and defined remediation SLAs. The program is run by Security Engineering.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-03-10",
+   "evidence": [
+    "EV-POLICY-INFOSEC"
+   ],
+   "age_days": 239,
+   "stale": true
+  },
+  {
+   "id": "HL-TVM-02",
+   "domains": [
+    "TVM"
+   ],
+   "keywords": "protect against malware managed assets anti-malware",
+   "response": "Yes",
+   "text": "Managed endpoints run CrowdStrike Falcon with real-time protection; email attachments and URLs are filtered by Google Workspace security. Malware detections are alerted to the security team.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-11-01",
+   "evidence": [
+    "EV-JAMF-COMPLIANCE"
+   ],
+   "age_days": 3,
+   "stale": false
+  },
+  {
+   "id": "HL-TVM-03",
+   "domains": [
+    "TVM"
+   ],
+   "keywords": "update patches managed assets vulnerability remediation prioritized risk-based",
+   "response": "Yes",
+   "text": "Patches are deployed via automated tooling (Jamf for endpoints, CI-built images for services) with SLAs by severity: critical within 15 days, high within 30. Compliance is tracked in the monthly vulnerability report.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-10-15",
+   "evidence": [
+    "EV-VULNSCAN-Q3"
+   ],
+   "age_days": 20,
+   "stale": false
+  },
+  {
+   "id": "HL-TVM-04",
+   "domains": [
+    "TVM"
+   ],
+   "keywords": "periodically identify vulnerabilities scanning penetration testing",
+   "response": "Yes",
+   "text": "Vulnerability scanning runs continuously on infrastructure and weekly on applications; an external penetration test is performed annually. The September 2026 pentest found no critical issues.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-09-02",
+   "evidence": [
+    "EV-PENTEST-2026",
+    "EV-VULNSCAN-Q3"
+   ],
+   "age_days": 63,
+   "stale": false
+  },
+  {
+   "id": "HL-TVM-05",
+   "domains": [
+    "TVM"
+   ],
+   "keywords": "track report vulnerability identification remediation metrics",
+   "response": "Yes",
+   "text": "Vulnerability identification and remediation are tracked in the security backlog with metrics (mean time to remediate by severity) reported monthly to the CISO.",
+   "owner": "Daniel Okafor",
+   "owner_title": "Security Engineer",
+   "last_reviewed": "2026-10-15",
+   "evidence": [
+    "EV-VULNSCAN-Q3"
+   ],
+   "age_days": 20,
+   "stale": false
+  },
+  {
+   "id": "HL-TVM-06",
+   "domains": [
+    "TVM"
+   ],
+   "keywords": "metrics vulnerability identification remediation established monitored reported",
+   "response": "Yes",
+   "text": "Vulnerability metrics \u2014 open findings by severity, SLA adherence, and mean time to remediate \u2014 are established, monitored in the monthly security report, and reviewed with engineering leadership.",
+   "owner": "Priya Nair",
+   "owner_title": "CISO",
+   "last_reviewed": "2026-10-15",
+   "evidence": [
+    "EV-VULNSCAN-Q3"
+   ],
+   "age_days": 20,
+   "stale": false
+  },
+  {
+   "id": "HL-UEM-01",
+   "domains": [
+    "UEM"
+   ],
+   "keywords": "endpoint management policies procedures established documented approved",
+   "response": "Yes",
+   "text": "Endpoint security requirements are defined in the Information Security Policy and enforced via Jamf Pro: disk encryption, auto-lock, firewall, and approved software only.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-03-10",
+   "evidence": [
+    "EV-POLICY-INFOSEC"
+   ],
+   "age_days": 239,
+   "stale": true
+  },
+  {
+   "id": "HL-UEM-02",
+   "domains": [
+    "UEM"
+   ],
+   "keywords": "inventory endpoints store access company data",
+   "response": "Yes",
+   "text": "All company endpoints are enrolled in Jamf Pro at provisioning; the inventory is reconciled monthly and unverified devices are blocked from corporate resources by Okta device trust.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-11-01",
+   "evidence": [
+    "EV-JAMF-COMPLIANCE"
+   ],
+   "age_days": 3,
+   "stale": false
+  },
+  {
+   "id": "HL-UEM-03",
+   "domains": [
+    "UEM"
+   ],
+   "keywords": "information protected unauthorized disclosure managed endpoints storage encryption",
+   "response": "Yes",
+   "text": "Full-disk encryption (FileVault/BitLocker) is enforced on all managed endpoints via Jamf; removable media is blocked by policy on devices handling customer data.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-11-01",
+   "evidence": [
+    "EV-JAMF-COMPLIANCE"
+   ],
+   "age_days": 3,
+   "stale": false
+  },
+  {
+   "id": "HL-UEM-04",
+   "domains": [
+    "UEM"
+   ],
+   "keywords": "interactive-use endpoints automatic lock screen",
+   "response": "Yes",
+   "text": "Automatic lock screen is enforced at 5 minutes of inactivity on all managed endpoints via Jamf configuration profiles.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-11-01",
+   "evidence": [
+    "EV-JAMF-COMPLIANCE"
+   ],
+   "age_days": 3,
+   "stale": false
+  },
+  {
+   "id": "HL-UEM-05",
+   "domains": [
+    "UEM"
+   ],
+   "keywords": "endpoint operating systems patch levels applications managed change",
+   "response": "Yes",
+   "text": "OS and application patches on endpoints are managed through Jamf with staged rollout rings; critical patches are pushed within 7 days. Compliance was 98% at the November 2026 check.",
+   "owner": "Lena Fischer",
+   "owner_title": "IT Manager",
+   "last_reviewed": "2026-11-01",
+   "evidence": [
+    "EV-JAMF-COMPLIANCE"
+   ],
+   "age_days": 3,
+   "stale": false
+  }
+ ],
+ "evidence": [
+  {
+   "id": "EV-SOC2-2026",
+   "title": "SOC 2 Type II report, period ending 2026-06-30",
+   "type": "audit report",
+   "issued": "2026-08-20",
+   "issuer": "Northgate Assurance LLP",
+   "age_days": 76,
+   "stale": false
+  },
+  {
+   "id": "EV-SOC2-2025",
+   "title": "SOC 2 Type II report, period ending 2025-06-30",
+   "type": "audit report",
+   "issued": "2025-08-15",
+   "issuer": "Northgate Assurance LLP",
+   "age_days": 446,
+   "stale": true
+  },
+  {
+   "id": "EV-PENTEST-2026",
+   "title": "Annual penetration test report",
+   "type": "test result",
+   "issued": "2026-09-02",
+   "issuer": "RedGate Security",
+   "age_days": 63,
+   "stale": false
+  },
+  {
+   "id": "EV-PENTEST-2025",
+   "title": "Annual penetration test report",
+   "type": "test result",
+   "issued": "2025-08-28",
+   "issuer": "RedGate Security",
+   "age_days": 433,
+   "stale": true
+  },
+  {
+   "id": "EV-VULNSCAN-Q3",
+   "title": "Quarterly vulnerability scan summary, Q3 2026",
+   "type": "scan result",
+   "issued": "2026-10-15",
+   "issuer": "Security Engineering (internal)",
+   "age_days": 20,
+   "stale": false
+  },
+  {
+   "id": "EV-IR-PLAN",
+   "title": "Incident response plan v3.2",
+   "type": "policy document",
+   "issued": "2026-07-01",
+   "issuer": "Security Engineering (internal)",
+   "age_days": 126,
+   "stale": false
+  },
+  {
+   "id": "EV-TABLETOP-2026",
+   "title": "Incident response tabletop exercise report",
+   "type": "test result",
+   "issued": "2026-06-18",
+   "issuer": "Security Engineering (internal)",
+   "age_days": 139,
+   "stale": false
+  },
+  {
+   "id": "EV-BCP-TEST-2026",
+   "title": "Business continuity / DR test report",
+   "type": "test result",
+   "issued": "2026-05-22",
+   "issuer": "IT Operations (internal)",
+   "age_days": 166,
+   "stale": false
+  },
+  {
+   "id": "EV-BACKUP-RESTORE",
+   "title": "Backup restore test log (monthly)",
+   "type": "log export",
+   "issued": "2026-10-01",
+   "issuer": "IT Operations (internal)",
+   "age_days": 34,
+   "stale": false
+  },
+  {
+   "id": "EV-AWS-SOC2",
+   "title": "AWS SOC 2 Type II report (inherited control evidence)",
+   "type": "audit report",
+   "issued": "2026-04-01",
+   "issuer": "AWS",
+   "age_days": 217,
+   "stale": false
+  },
+  {
+   "id": "EV-AWS-CAIQ",
+   "title": "AWS CAIQ v4.0.2 self-assessment (inherited control evidence)",
+   "type": "attestation",
+   "issued": "2026-01-15",
+   "issuer": "AWS",
+   "age_days": 293,
+   "stale": false
+  },
+  {
+   "id": "EV-POLICY-INFOSEC",
+   "title": "Information security policy v4.0",
+   "type": "policy document",
+   "issued": "2026-03-10",
+   "issuer": "CISO",
+   "age_days": 239,
+   "stale": false
+  },
+  {
+   "id": "EV-POLICY-DATA",
+   "title": "Data protection and privacy policy v2.1",
+   "type": "policy document",
+   "issued": "2026-03-10",
+   "issuer": "Privacy Counsel",
+   "age_days": 239,
+   "stale": false
+  },
+  {
+   "id": "EV-POLICY-APPSEC",
+   "title": "Application security policy v3.0",
+   "type": "policy document",
+   "issued": "2026-02-15",
+   "issuer": "Security Engineering (internal)",
+   "age_days": 262,
+   "stale": false
+  },
+  {
+   "id": "EV-POLICY-CHANGE",
+   "title": "Change management policy v2.4",
+   "type": "policy document",
+   "issued": "2026-04-05",
+   "issuer": "DevOps (internal)",
+   "age_days": 213,
+   "stale": false
+  },
+  {
+   "id": "EV-POLICY-BCP",
+   "title": "Business continuity policy v2.0",
+   "type": "policy document",
+   "issued": "2026-01-20",
+   "issuer": "IT Operations (internal)",
+   "age_days": 288,
+   "stale": false
+  },
+  {
+   "id": "EV-POLICY-REMOTE",
+   "title": "Remote work and acceptable use policy v1.8",
+   "type": "policy document",
+   "issued": "2025-12-01",
+   "issuer": "IT (internal)",
+   "age_days": 338,
+   "stale": false
+  },
+  {
+   "id": "EV-RISK-REGISTER",
+   "title": "Risk register, Q3 2026",
+   "type": "register",
+   "issued": "2026-09-30",
+   "issuer": "CISO",
+   "age_days": 35,
+   "stale": false
+  },
+  {
+   "id": "EV-DPIA-2026",
+   "title": "Data protection impact assessment, analytics pipeline v2",
+   "type": "assessment",
+   "issued": "2026-08-01",
+   "issuer": "Privacy Counsel",
+   "age_days": 95,
+   "stale": false
+  },
+  {
+   "id": "EV-DATAFLOW",
+   "title": "Customer data flow diagrams",
+   "type": "diagram",
+   "issued": "2026-07-15",
+   "issuer": "Security Engineering (internal)",
+   "age_days": 112,
+   "stale": false
+  },
+  {
+   "id": "EV-ACCESS-REVIEW-Q3",
+   "title": "Quarterly user access review, Q3 2026",
+   "type": "attestation",
+   "issued": "2026-10-10",
+   "issuer": "IT (internal)",
+   "age_days": 25,
+   "stale": false
+  },
+  {
+   "id": "EV-ACCESS-REVIEW-Q1",
+   "title": "Quarterly user access review, Q1 2026",
+   "type": "attestation",
+   "issued": "2026-04-10",
+   "issuer": "IT (internal)",
+   "age_days": 208,
+   "stale": false
+  },
+  {
+   "id": "EV-SUBPROCESSORS",
+   "title": "Subprocessor list",
+   "type": "register",
+   "issued": "2026-09-01",
+   "issuer": "Legal",
+   "age_days": 64,
+   "stale": false
+  },
+  {
+   "id": "EV-TRAINING-2026",
+   "title": "Security awareness training completion report",
+   "type": "report",
+   "issued": "2026-10-25",
+   "issuer": "HR (internal)",
+   "age_days": 10,
+   "stale": false
+  },
+  {
+   "id": "EV-JAMF-COMPLIANCE",
+   "title": "Endpoint compliance export (Jamf Pro)",
+   "type": "config export",
+   "issued": "2026-11-01",
+   "issuer": "IT (internal)",
+   "age_days": 3,
+   "stale": false
+  },
+  {
+   "id": "EV-DATADOG-LOGS",
+   "title": "Log retention and monitoring configuration export (Datadog)",
+   "type": "config export",
+   "issued": "2026-10-20",
+   "issuer": "DevOps (internal)",
+   "age_days": 15,
+   "stale": false
+  },
+  {
+   "id": "EV-CRYPTO-INVENTORY",
+   "title": "Cryptographic key inventory (AWS KMS)",
+   "type": "register",
+   "issued": "2026-09-15",
+   "issuer": "Security Engineering (internal)",
+   "age_days": 50,
+   "stale": false
+  },
+  {
+   "id": "EV-VENDOR-ASSESS",
+   "title": "Vendor risk assessment pack, H1 2026",
+   "type": "assessment",
+   "issued": "2026-06-30",
+   "issuer": "Security Engineering (internal)",
+   "age_days": 127,
+   "stale": false
+  }
+ ]
+}
